@@ -12,7 +12,12 @@ module.exports = {
     letterSpacing: {
       tight: '-.015em',
       wide: '0.025em',
-      wider: '0.07em',
+      wider: '0.04em',
+    },
+    fontFamily: {
+      'display': ['"Josefin Slab"'],
+      'body': ['"Titillium Web"'],
+      'mono': ['"Space Mono"']
     },
     extend: {
       height: {
