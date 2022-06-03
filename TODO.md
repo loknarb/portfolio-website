@@ -1,7 +1,8 @@
 # **Current Todos**
 
 - [ ] Mobile first designed, then we work on concept from Desktop
-- [ ] Write README.md
+- [ ] **Write README.md**
+- [ ] Domain s-brum.com
 - [ ] Write Code Block
   - [ ] Figure out if possible to write it into Tailwind CSS
   - [ ] Figure out way to make it responsive 
@@ -17,36 +18,36 @@
   - [ ] Figure out how to link to email message
     - [ ] perhaps mailto:brumbaughco@gmail.com
   - [ ] LinkedIN Linked to https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ 
-- [ ] Assets Collect
+- [x] Assets Collect
   - [x] Github
-  - [x] Color Pallette  - zinc
+  - [x] Color Pallette  - zinc Almost
   - [x] LinkedIn
   - [x] Font Family 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-      <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet"> 
-      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet"> 
+      - <link rel="preconnect" href="https://fonts.googleapis.com">
+      - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      - <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+      - <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet"> 
+      - <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet"> 
     - [x] Codeblock - 
     - [x] Header - Josefin Slab SemiBold 40px 
     - [x] H1 - Titillium Web 40px
     - [x] H2  Titillium Web 32px
     - [x] Sub Text Titillium Web 20px
-    - [ ] Footer - unsure if we should even have one
+    - [x] Footer - unsure if we should even have one
   - [x] SVG for Left swiper SVG for Right swiper
   - [x] Header Text to grab attention
   - [x] Body text for each facet of being a developer designer
-  - [] Email to message from
+  - [x] Email to message from
 - [ ] Necessary JS library installed
   - [ ] axios
   - [ ] swiper.js
+  - [ ] https://headlessui.dev/react/transition
 
 - [ ] Github commits tallied from their API
-- [ ] https://youtu.be/GznmPACXBlY
-- [ ] https://stackoverflow.com/questions/18262288/finding-total-contributions-of-a-user-from-github-api
-- [ ] https://docs.github.com/en/graphql/overview/explorer
-  - [ ] contributions number from github
-- [ ] Back to normal 
+  - https://youtu.be/GznmPACXBlY
+  - https://stackoverflow.com/questions/18262288/finding-total-contributions-of-a-user-from-github-api
+  - https://docs.github.com/en/graphql/overview/explorer
+  - contributions number from github
 
 
 
