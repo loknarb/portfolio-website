@@ -15,6 +15,7 @@
   :root {
     /*--bg-color: white rgb(39 39 42);*/
     --bg-color: rgb(39 39 42);
+    /* ! Never change this from s it has to remain s */
     --typewriterSpeed: 2s;
     --line1Characters: 23;
     --line2Characters: 20;
@@ -25,7 +26,7 @@
     --line7Characters: 12;
     --line8Characters: 13;
     --line9Characters: 5;
-    --line10Characters: 8;
+    --line10Characters: 9;
   }
 
   code {
@@ -180,11 +181,12 @@
       blink var(--typewriterSpeed) calc(8 * (var(--typewriterSpeed) + 1s)) 1 forwards;
   }
   code#line10::after {
+    height: 1rem;
+    top: 0.125rem;
     width: 0.125em;
-    @apply bg-transparent;
     animation: typewriter var(--typewriterSpeed) steps(var(--line10Characters))
         calc(9 * (var(--typewriterSpeed) + 1s)) forwards,
-      blink var(--typewriterSpeed) calc(9 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+        blink2 3000ms ease-in-out calc(9 * (var(--typewriterSpeed) + 1s)) infinite;
   }
   /* div#line1 {
     @apply opacity-0;
@@ -226,6 +228,14 @@
   @keyframes show {
     to {
       @apply opacity-100
+    }
+  }
+  @keyframes blink2 {
+    from {
+      @apply bg-transparent;
+    }
+    to {
+      @apply bg-zinc-300;
     }
   }
   @keyframes blink {

@@ -13,3 +13,6 @@ still curious?
 
 let's talk.
 email here
+
+Resume/CV
+
