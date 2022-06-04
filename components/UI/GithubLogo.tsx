@@ -3,7 +3,7 @@ import React from 'react';
 const AtLogo = ({ height, width, color, className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
     className={className ? className : 'w-7 h-7'}
-    viewBox='0 0 27 27'
+    viewBox='0 0 28 28'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
     {...props}>

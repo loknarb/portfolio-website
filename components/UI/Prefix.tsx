@@ -6,7 +6,6 @@ const PrefixCode: React.FC<
     beforeColor?: string;
   }
 > = ({ id, type, className, children, ...rest }) => {
-  console.log(className);
   return (
     <div className='flex align-top'>
       <div

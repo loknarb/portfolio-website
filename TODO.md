@@ -6,13 +6,13 @@
 - [ ] Write Code Block
   - [ ] Figure out if possible to write it into Tailwind CSS
   - [ ] Figure out way to make it responsive 
-  - [ ] Global css 
-  - [ ] Configure how many characters we are using
-  - [ ] How many Lines of Code we want to use
-    - [ ] node -v 
-    - [ ] corepack enable
-    - [ ] yarn add react react-dom next|express
-    - [ ] yarn add -D @types/PACKAGE typescript eslint prettier postcss tailwindcss autoprefixer
+  - [x] Global css 
+  - [x] Configure how many characters we are using
+  - [x] How many Lines of Code we want to use
+    - [x] node -v 
+    - [x] corepack enable
+    - [x] yarn add react react-dom next|express
+    - [x] yarn add -D @types/PACKAGE typescript eslint prettier postcss tailwindcss autoprefixer
 - [ ] Links Created
   - [ ] Github Link to https://github.com/loknarb
   - [ ] Figure out how to link to email message
@@ -58,4 +58,5 @@
 
 
 ## v2 
-- [] clicking of card loads out website instantly
+- [ ] clicking of card loads out website instantly
+- [ ] Dynamically create our code string length and adjust our css properties to reflect the change in versions
