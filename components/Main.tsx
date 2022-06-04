@@ -13,9 +13,10 @@ import PrefixCode from './UI/Prefix';
 import AtLogo from './UI/AtLogo';
 import GithubLogo from './UI/GithubLogo';
 import LinkedInLogo from './UI/LinkedInLogo';
+import PrimaryButton from './UI/PrimaryButton';
 const Main = () => {
   return (
-    <main className='pt-10 px-14'>
+    <main className='pt-10 px-10'>
       <div className='flex flex-col items-center'>
         <h1 className='text-4xl font-bold text-center font-body -tracking-wider'>
           Web
@@ -34,7 +35,7 @@ const Main = () => {
           </a>
         </div>
       </div>
-      <div className='max-w-2xl px-1 my-6 -mx-8 border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700'>
+      <div className='max-w-2xl px-1 mt-6 -mx-8 mb-72 border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700'>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
         <CuteButtons type='zoom' />
@@ -86,7 +87,7 @@ const Main = () => {
           balance between creative design and meeting deadlines.
         </span>
       </ParagraphSimple>
-      <MeGraph />
+      <MeGraph className='mx-auto' />
       <ParagraphSimple className='py-5 text-zinc-200'>
         I'm currently focused on using<span className='font-semibold'> React </span>with
         <span className='font-semibold'> Typescript </span>
@@ -127,16 +128,21 @@ const Main = () => {
         I believe that when finding true mastery, you have to always seek and explore new ideas and
         not be afraid to experiment! That's why I'm eager with any challenge brought to me.
       </ParagraphSimple>
-      {/* <BlackDesktop /> */}
       <H2Simple>projects</H2Simple>
       <FullLine />
-
-      <div className='py-10'>
-        <Image src={Test} />
-      </div>
-      {/* <div>
-        <Image src={Test2} />
-      </div> */}
+      <BlackDesktop className='mx-auto py-5' />
+      <PrimaryButton className=''>
+        <span className='font-display text-lg -tracking-wider'>news-gallery</span>
+        <span className='font-body text-sm'>react / typescript </span>
+      </PrimaryButton>
+      <PrimaryButton className=''>
+        <span className='font-display text-lg -tracking-wider'>stopwatch</span>
+        <span className='font-body text-sm'>python / tkinter </span>
+      </PrimaryButton>
+      <PrimaryButton className=''>
+        <span className='font-display text-lg -tracking-wider'>state-comparer</span>
+        <span className='font-body text-sm'>react / typescript </span>
+      </PrimaryButton>
     </main>
   );
 };
