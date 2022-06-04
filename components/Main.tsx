@@ -11,7 +11,9 @@ const Main: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }> 
       <main className='px-10 pt-10'>
         <Body />
       </main>
-      <SidebarMobile sideBar={sideBar} setSidebar={setSidebar} />
+      <div>
+        <SidebarMobile sideBar={sideBar} setSidebar={setSidebar} />
+      </div>
     </div>
   );
 };
