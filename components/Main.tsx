@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Test from '../public/news-gallery-project.png';
 import Test2 from '../public/state-management.png';
@@ -15,19 +15,25 @@ import GithubLogo from './UI/GithubLogo';
 import LinkedInLogo from './UI/LinkedInLogo';
 import PrimaryButton from './UI/PrimaryButton';
 const Main = () => {
+  const [animate, setAnimate] = useState(false);
+  const AnimateHandler = () => {
+    setAnimate(true);
+  };
+  console.log(animate);
   return (
-    <main className='pt-10 px-10'>
+    <main className='px-10 pt-10'>
       <div className='flex flex-col items-center'>
         <h1 className='text-4xl font-bold text-center font-body -tracking-wider'>
           Web
           <br />
           Developer
         </h1>
-        <div className='flex flex-1 my-4 justify-evenly w-full px-8'>
+        <div className='flex flex-1 w-full px-8 my-4 justify-evenly'>
           <a href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ ' target={'_blank'}>
             <LinkedInLogo />
           </a>
-          <a href='https://github.com/loknarb' target={'_blank'}>
+          <a onClick={() => AnimateHandler()}>
+            {/* <a href='https://github.com/loknarb' target={'_blank'}> */}
             <GithubLogo />
           </a>
           <a href='mailto:contact@s-brum.com' target={'_blank'}>
@@ -35,7 +41,10 @@ const Main = () => {
           </a>
         </div>
       </div>
-      <div className='max-w-2xl px-1 mt-6 -mx-8 mb-72 border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700'>
+      <div
+        className={`max-w-2xl px-1 mt-6 -mx-8 transition-transform duration-700 delay-300 ${
+          animate ? 'mb-4' : 'mb-72'
+        } border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700`}>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
         <CuteButtons type='zoom' />
@@ -130,18 +139,18 @@ const Main = () => {
       </ParagraphSimple>
       <H2Simple>projects</H2Simple>
       <FullLine />
-      <BlackDesktop className='mx-auto py-5' />
+      <BlackDesktop className='py-5 mx-auto' />
       <PrimaryButton className=''>
-        <span className='font-display text-lg -tracking-wider'>news-gallery</span>
-        <span className='font-body text-sm'>react / typescript </span>
+        <span className='text-lg font-display -tracking-wider'>news-gallery</span>
+        <span className='text-sm font-body'>react / typescript </span>
       </PrimaryButton>
       <PrimaryButton className=''>
-        <span className='font-display text-lg -tracking-wider'>stopwatch</span>
-        <span className='font-body text-sm'>python / tkinter </span>
+        <span className='text-lg font-display -tracking-wider'>stopwatch</span>
+        <span className='text-sm font-body'>python / tkinter </span>
       </PrimaryButton>
       <PrimaryButton className=''>
-        <span className='font-display text-lg -tracking-wider'>state-comparer</span>
-        <span className='font-body text-sm'>react / typescript </span>
+        <span className='text-lg font-display -tracking-wider'>state-comparer</span>
+        <span className='text-sm font-body'>react / typescript </span>
       </PrimaryButton>
     </main>
   );
