@@ -9,6 +9,7 @@ import ParagraphSimple from './UI/ParagraphSimple';
 import H2Simple from './UI/H2Simple';
 import FullLine from './UI/FullLine';
 import CuteButtons from './UI/CuteButtons';
+import PrefixCode from './UI/Prefix';
 const Main = () => {
   return (
     <main className='pt-10 px-14'>
@@ -17,25 +18,53 @@ const Main = () => {
         <br />
         Developer
       </h1>
-      <div className='max-w-2xl px-1 my-6 -mx-8 border rounded shadow-md bg-zinc-800 h-60 shadow-zinc-800 border-zinc-700'>
+      <div className='max-w-2xl px-1 my-6 -mx-8 border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700'>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
         <CuteButtons type='zoom' />
         <div className='mx-5 my-2 font-mono text-sm'>
-          <div>Test</div>
-          <div>
-            <span className='italic font-bold'> Test Subject</span>
-          </div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
+          <PrefixCode id='line1' type='$'>
+            <span className='text-yellow-200'>mkdir</span>{' '}
+            <span className='italic'>portfolio-website</span>{' '}
+          </PrefixCode>
+          <PrefixCode id='line2' type='$'>
+            <span className='text-yellow-200'>cd</span>{' '}
+            <span className='italic'>portfolio-website</span>{' '}
+          </PrefixCode>
+          <PrefixCode id='line3' type='$'>
+            <span className='italic'>yarn</span> <span className='text-green-300'>add</span>
+            <span className='font-bold'> react react-dom next</span>
+          </PrefixCode>
+          <PrefixCode id='line4' type='$'>
+            <span className='italic'>yarn</span> <span className='text-green-300'>add</span>{' '}
+            <span className='italic'>-D</span> <span className='font-bold'>@types/packages</span>
+          </PrefixCode>
+          <PrefixCode type=' ' id='line5'>
+            <span className='font-bold'>typescript eslint prettier</span>
+          </PrefixCode>
+          <PrefixCode type=' ' id='line6'>
+            <span className='font-bold'>postcss tailwindcss</span>
+          </PrefixCode>
+          <PrefixCode type=' ' id='line7'>
+            <span className='font-bold tracking-wide'>autoprefixer</span>
+          </PrefixCode>
+          <PrefixCode id='line8' type='>' className='text-purple-300 opacity-50'>
+            <span className='text-purple-300'>installing...</span>
+          </PrefixCode>
+          <PrefixCode id='line9' type='>' className='text-green-300 opacity-50'>
+            <span className='text-green-300'>Done!</span>
+          </PrefixCode>
+          <PrefixCode id='line10' type='$'>
+            <span>
+              <span className='italic'>yarn</span> <span className='text-green-300'>dev</span>
+            </span>
+          </PrefixCode>
         </div>
       </div>
       <H2Simple>about</H2Simple>
       <FullLine />
       <ParagraphSimple className='py-5'>
-        Hey my name is <span className='font-semibold'> Sebastien </span>, an intrigued developer
+        Hey my name is <span className='font-semibold'> Sebastien</span>, an intrigued developer
         when it comes to solving problems, and coming up with creative and timely solutions.
       </ParagraphSimple>
       <MeGraph />
@@ -46,28 +75,38 @@ const Main = () => {
         building{' '}
         <a
           href='https://www.educative.io/edpresso/what-is-server-side-rendering'
-          className='underline'>
+          className='underline'
+          target={'_blank'}>
           SSR
         </a>{' '}
         /{' '}
-        <a href='https://developer.mozilla.org/en-US/docs/Glossary/SPA' className='underline'>
+        <a
+          href='https://developer.mozilla.org/en-US/docs/Glossary/SPA'
+          className='underline'
+          target={'_blank'}>
           SPA
         </a>{' '}
         /{' '}
         <a
           href='https://www.freecodecamp.org/news/static-site-generation-with-nextjs/#what-happens-during-static-generation'
-          className='underline'>
+          className='underline'
+          target={'_blank'}>
           SSG
         </a>{' '}
-        , managing the clients state, writing tests to ensure the code doesn’t break, and
-        communicating with the Backend via REST, and Websocket API calls.
+        , managing the clients state, writing tests to ensure the{' '}
+        <a
+          className='underline'
+          href='https://memegenerator.net/img/instances/74108412/one-does-not-simply-center-a-div.jpg'
+          target={'_blank'}>
+          div stays centered
+        </a>
+        , and communicating with the Backend via REST, and Websocket API calls.
       </ParagraphSimple>
       <H2Simple>my philosophy</H2Simple>
       <FullLine />
       <ParagraphSimple className='py-5'>
-        I believe that when finding true happiness in life, one must always seek and explore new
-        ideas and not be afraid to experiment! That's why I'm not afraid with any challenge brought
-        to me.
+        I believe that when finding true mastery, you have to always seek and explore new ideas and
+        not be afraid to experiment! That's why I'm eager with any challenge brought to me.
       </ParagraphSimple>
       {/* <BlackDesktop /> */}
       <H2Simple>projects</H2Simple>

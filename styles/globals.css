@@ -3,91 +3,253 @@
 @tailwind utilities;
 
 @layer base {
-
   html,
   body {
     @apply bg-zinc-900;
     @apply text-zinc-50;
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+      Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
-}
-/* !
-:root {
-  --bg-color: hsl(49 37% 94%);
-  --typewriterSpeed: 3s;
-  --typewriterCharacters: 24;
-}
-
-body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  background: var(--bg-color);
-}
-
-h1 {
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
-  position: relative;
-  font-family: "Source Code Pro", monospace;
-  position: relative;
-  width: max-content;
-}
-
-h1::before,
-h1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-h1::before {
-  background: var(--bg-color);
-  animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
-}
-
-h1::after {
-  width: 0.125em;
-  background: black;
-  animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
-}
-
-.subtitle {
-  color: hsl(0 0% 0% / 0.7);
-  font-size: 2rem;
-  font-weight: 400;
-  opacity: 0;
-  transform: translateY(3rem);
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
+  :root {
+    /*--bg-color: white rgb(39 39 42);*/
+    --bg-color: rgb(39 39 42);
+    --typewriterSpeed: 2s;
+    --line1Characters: 23;
+    --line2Characters: 20;
+    --line3Characters: 29;
+    --line4Characters: 27;
+    --line5Characters: 26;
+    --line6Characters: 19;
+    --line7Characters: 12;
+    --line8Characters: 13;
+    --line9Characters: 5;
+    --line10Characters: 8;
   }
-}
 
-@keyframes blink {
-  to {
-    background: transparent;
+  code {
+    position: relative;
+    width: max-content;
   }
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  /* code#line2 {
+    position: relative;
+    width: max-content;
   }
-} */
+  code#line3 {
+    position: relative;
+    width: max-content;
+  } */
 
+  code::before, code::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  /* code#line2::before,
+  code#line2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  code#line3::before,
+  code#line3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  } */
+
+  code#line1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line1Characters)) 1s forwards;
+  }
+  code#line2::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line2Characters))
+      calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+  code#line3::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line3Characters))
+      calc(2 * (var(--typewriterSpeed) + 2s)) forwards;
+  }
+  code#line4::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line4Characters))
+      calc(3 * (var(--typewriterSpeed) + 2s)) forwards;
+  }
+  code#line5::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line5Characters))
+      calc(4 * (var(--typewriterSpeed) + 1.5s)) forwards;
+  }
+  code#line6::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line6Characters))
+      calc(5 * (var(--typewriterSpeed) + 1.2s)) forwards;
+  }
+  code#line7::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line7Characters))
+      calc(6 * (var(--typewriterSpeed) + 1s)) forwards;
+  }
+  code#line8::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line8Characters))
+      calc(7 * (var(--typewriterSpeed) + 1s)) forwards;
+  }
+  code#line9::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line9Characters))
+      calc(8 * (var(--typewriterSpeed) + 1s)) forwards;
+  }
+  code#line10::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--line10Characters))
+      calc(9 * (var(--typewriterSpeed) + 1s)) forwards;
+  }
+  code#line1::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line1Characters)) 1s forwards,
+      blink var(--typewriterSpeed) 1s 1 ;
+  }
+  code#line2::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line2Characters))
+        calc((var(--typewriterSpeed) + 2s)) forwards,
+      blink var(--typewriterSpeed) calc((var(--typewriterSpeed) + 2s)) 1 ;
+  }
+  code#line3::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line3Characters))
+        calc(2 * (var(--typewriterSpeed) + 2s)) forwards,
+      blink var(--typewriterSpeed) calc(2 * (var(--typewriterSpeed) + 2s)) 1 forwards;
+  }
+  code#line4::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line4Characters))
+        calc(3 * (var(--typewriterSpeed) + 2s)) forwards,
+      blink var(--typewriterSpeed) calc(3 * (var(--typewriterSpeed) + 2s)) 1 forwards;
+  }
+  code#line5::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line5Characters))
+        calc(4 * (var(--typewriterSpeed) + 1.5s)) forwards,
+      blink var(--typewriterSpeed) calc(4 * (var(--typewriterSpeed) + 1.5s)) 1 forwards;
+  }
+  code#line6::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line6Characters))
+        calc(5 * (var(--typewriterSpeed) + 1.2s)) forwards,
+      blink var(--typewriterSpeed) calc(5 * (var(--typewriterSpeed) + 1.2s)) 1 forwards;
+  }
+  code#line7::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line7Characters))
+        calc(6 * (var(--typewriterSpeed) + 1s)) forwards,
+      blink var(--typewriterSpeed) calc(6 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }
+  code#line8::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line8Characters))
+        calc(7 * (var(--typewriterSpeed) + 1s)) forwards,
+      blink var(--typewriterSpeed) calc(7 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }
+  code#line9::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line9Characters))
+        calc(8 * (var(--typewriterSpeed) + 1s)) forwards,
+      blink var(--typewriterSpeed) calc(8 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }
+  code#line10::after {
+    width: 0.125em;
+    @apply bg-transparent;
+    animation: typewriter var(--typewriterSpeed) steps(var(--line10Characters))
+        calc(9 * (var(--typewriterSpeed) + 1s)) forwards,
+      blink var(--typewriterSpeed) calc(9 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }
+  /* div#line1 {
+    @apply opacity-0;
+    animation: show 2s ease-in 1s 1 forwards
+  }   */
+  div#line2 {
+    @apply opacity-0;
+    animation: show 2s ease-in calc(var(--typewriterSpeed)) 1 forwards
+  }  
+  div#line3 {
+    @apply opacity-0;
+    animation: show 2s ease-in calc(2 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }  
+  div#line4 {
+    @apply opacity-0;
+    animation: show 2s ease-in calc(3 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }  
+  div#line5 {
+    @apply opacity-0;
+    animation: show 2s ease-in calc(4 * (var(--typewriterSpeed))) 1 forwards;
+  }  
+  div#line8 {
+    @apply opacity-0;
+    animation: show 2s ease-in calc(7 * (var(--typewriterSpeed)  + 1s)) 1 forwards;
+  }  
+  div#line9 {
+    @apply opacity-0;
+    animation: show 2s ease-in calc(8 * (var(--typewriterSpeed)  + 1s)) 1 forwards;
+  }  
+  div#line10 {
+    @apply opacity-0;
+    animation: show 2s ease-in calc(9 * (var(--typewriterSpeed)  + 1s)) 1 forwards;
+  }  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes show {
+    to {
+      @apply opacity-100
+    }
+  }
+  @keyframes blink {
+    from {
+      @apply bg-transparent;
+    }
+    1% {
+      @apply bg-zinc-300;
+    }
+    50% {
+      @apply bg-zinc-300;
+    }
+    99% {
+      @apply bg-zinc-300;
+    }
+    to {
+      @apply bg-transparent;
+    }
+  }
+
+  /* @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
+}
