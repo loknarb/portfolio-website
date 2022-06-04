@@ -7,8 +7,8 @@ const H2Simple: React.FC<
     <h2
       className={
         className
-          ? `text-2xl font-bold font-display -tracking-wider ${className}`
-          : 'text-2xl font-bold font-display -tracking-wider'
+          ? `text-2xl tablet:ml-2 font-bold font-display -tracking-wider ${className}`
+          : 'text-2xl tablet:ml-2 font-bold font-display -tracking-wider'
       }
       {...rest}>
       {children}
