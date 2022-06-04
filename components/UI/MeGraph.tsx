@@ -1,5 +1,6 @@
 const MeGraph = ({ color, className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
+    className={className ? className : ''}
     width='210'
     height='254'
     viewBox='0 0 210 254'

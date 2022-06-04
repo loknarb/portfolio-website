@@ -13,11 +13,11 @@
     - [x] corepack enable
     - [x] yarn add react react-dom next|express
     - [x] yarn add -D @types/PACKAGE typescript eslint prettier postcss tailwindcss autoprefixer
-- [ ] Links Created
-  - [ ] Github Link to https://github.com/loknarb
-  - [ ] Figure out how to link to email message
-    - [ ] perhaps mailto:brumbaughco@gmail.com
-  - [ ] LinkedIN Linked to https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ 
+- [x] Links Created
+  - [x] Github Link to https://github.com/loknarb
+  - [x] Figure out how to link to email message
+    - [x] perhaps mailto:brumbaughco@gmail.com
+  - [x] LinkedIN Linked to https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ 
 - [x] Assets Collect
   - [x] Github
   - [x] Color Pallette  - zinc Almost
@@ -38,16 +38,14 @@
   - [x] Header Text to grab attention
   - [x] Body text for each facet of being a developer designer
   - [x] Email to message from
+- [ ] Project Section
+  - [ ] Buttons need to be Gridded
+  - [ ] each button needs to open new link to their respective repositories
+  - [ ] 
 - [ ] Necessary JS library installed
   - [ ] axios
-  - [ ] swiper.js
   - [ ] https://headlessui.dev/react/transition
 
-- [ ] Github commits tallied from their API
-  - https://youtu.be/GznmPACXBlY
-  - https://stackoverflow.com/questions/18262288/finding-total-contributions-of-a-user-from-github-api
-  - https://docs.github.com/en/graphql/overview/explorer
-  - contributions number from github
 
 
 
@@ -60,3 +58,9 @@
 ## v2 
 - [ ] clicking of card loads out website instantly
 - [ ] Dynamically create our code string length and adjust our css properties to reflect the change in versions
+- [ ] swiper.js
+- [ ] Github commits tallied from their API
+  - https://youtu.be/GznmPACXBlY
+  - https://stackoverflow.com/questions/18262288/finding-total-contributions-of-a-user-from-github-api
+  - https://docs.github.com/en/graphql/overview/explorer
+  - contributions number from github
