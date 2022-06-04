@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Test from '../public/news-gallery-project.png';
-import Test2 from '../public/state-management.png';
-import Test3 from '../public/black_desktop.svg';
+import React, { useEffect, useState } from 'react';
 import MeGraph from './UI/MeGraph';
 import BlackDesktop from './UI/BlackDesktop';
 import ParagraphSimple from './UI/ParagraphSimple';
@@ -16,10 +12,17 @@ import LinkedInLogo from './UI/LinkedInLogo';
 import PrimaryButton from './UI/PrimaryButton';
 const Main = () => {
   const [animate, setAnimate] = useState(false);
-  const AnimateHandler = () => {
-    setAnimate(true);
-  };
-  console.log(animate);
+  useEffect(() => {
+    const y = getComputedStyle(document.body).getPropertyValue('--typewriterSpeed');
+    const typeWriterSpeed = parseInt(y.split('s')[0]);
+    const finalSlide = 1000 * (10 * (typeWriterSpeed + 1));
+    // const final = finalSlide.toString().concat('ms');
+    const timerSlider = setTimeout(() => {
+      setAnimate(true);
+    }, finalSlide);
+    return () => clearTimeout(timerSlider);
+  }, []);
+
   return (
     <main className='px-10 pt-10'>
       <div className='flex flex-col items-center'>
@@ -29,21 +32,29 @@ const Main = () => {
           Developer
         </h1>
         <div className='flex flex-1 w-full px-8 my-4 justify-evenly'>
-          <a href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ ' target={'_blank'}>
+          <a
+            href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ '
+            className={'hover:scale-110 transition-transform duration-500'}
+            target={'_blank'}>
             <LinkedInLogo />
           </a>
-          <a onClick={() => AnimateHandler()}>
-            {/* <a href='https://github.com/loknarb' target={'_blank'}> */}
+          <a
+            href='https://github.com/loknarb'
+            className={'hover:scale-110 transition-transform duration-500'}
+            target={'_blank'}>
             <GithubLogo />
           </a>
-          <a href='mailto:contact@s-brum.com' target={'_blank'}>
+          <a
+            href='mailto:contact@s-brum.com'
+            className={'hover:scale-110 transition-transform duration-500'}
+            target={'_blank'}>
             <AtLogo />
           </a>
         </div>
       </div>
       <div
-        className={`max-w-2xl px-1 mt-6 -mx-8 transition-transform duration-700 delay-300 ${
-          animate ? 'mb-4' : 'mb-72'
+        className={`max-w-2xl px-1 mt-6 -mx-8 transition-all duration-700 delay-300 ${
+          animate ? 'mb-8' : 'mb-72'
         } border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700`}>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
@@ -82,7 +93,7 @@ const Main = () => {
           </PrefixCode>
           <PrefixCode id='line10' type='$'>
             <span>
-              <span className='italic'>yarn</span> <span className='text-green-300'>dev</span>
+              <span className='italic'>yarn</span> <span className='mr-1 text-green-300'>dev</span>
             </span>
           </PrefixCode>
         </div>
@@ -140,15 +151,15 @@ const Main = () => {
       <H2Simple>projects</H2Simple>
       <FullLine />
       <BlackDesktop className='py-5 mx-auto' />
-      <PrimaryButton className=''>
+      <PrimaryButton>
         <span className='text-lg font-display -tracking-wider'>news-gallery</span>
         <span className='text-sm font-body'>react / typescript </span>
       </PrimaryButton>
-      <PrimaryButton className=''>
+      <PrimaryButton>
         <span className='text-lg font-display -tracking-wider'>stopwatch</span>
         <span className='text-sm font-body'>python / tkinter </span>
       </PrimaryButton>
-      <PrimaryButton className=''>
+      <PrimaryButton>
         <span className='text-lg font-display -tracking-wider'>state-comparer</span>
         <span className='text-sm font-body'>react / typescript </span>
       </PrimaryButton>
