@@ -10,14 +10,30 @@ import H2Simple from './UI/H2Simple';
 import FullLine from './UI/FullLine';
 import CuteButtons from './UI/CuteButtons';
 import PrefixCode from './UI/Prefix';
+import AtLogo from './UI/AtLogo';
+import GithubLogo from './UI/GithubLogo';
+import LinkedInLogo from './UI/LinkedInLogo';
 const Main = () => {
   return (
     <main className='pt-10 px-14'>
-      <h1 className='text-4xl font-bold text-center font-body -tracking-wider'>
-        Web
-        <br />
-        Developer
-      </h1>
+      <div className='flex flex-col items-center'>
+        <h1 className='text-4xl font-bold text-center font-body -tracking-wider'>
+          Web
+          <br />
+          Developer
+        </h1>
+        <div className='flex flex-1 my-4 justify-evenly w-full px-8'>
+          <a href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ ' target={'_blank'}>
+            <LinkedInLogo />
+          </a>
+          <a href='https://github.com/loknarb' target={'_blank'}>
+            <GithubLogo />
+          </a>
+          <a href='mailto:contact@s-brum.com' target={'_blank'}>
+            <AtLogo />
+          </a>
+        </div>
+      </div>
       <div className='max-w-2xl px-1 my-6 -mx-8 border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700'>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
@@ -48,8 +64,8 @@ const Main = () => {
           <PrefixCode type=' ' id='line7'>
             <span className='font-bold tracking-wide'>autoprefixer</span>
           </PrefixCode>
-          <PrefixCode id='line8' type='>' className='text-purple-300 opacity-50'>
-            <span className='text-purple-300'>installing...</span>
+          <PrefixCode id='line8' type='>' className='text-pink-300 opacity-50'>
+            <span className='text-pink-300'>installing...</span>
           </PrefixCode>
           <PrefixCode id='line9' type='>' className='text-green-300 opacity-50'>
             <span className='text-green-300'>Done!</span>
@@ -64,38 +80,41 @@ const Main = () => {
       <H2Simple>about</H2Simple>
       <FullLine />
       <ParagraphSimple className='py-5'>
-        Hey my name is <span className='font-semibold'> Sebastien</span>, an intrigued developer
-        when it comes to solving problems, and coming up with creative and timely solutions.
+        <span className='text-zinc-300'>
+          Hey my name is <span className='font-semibold text-zinc-50'> Sebastien</span>, an
+          intrigued developer, particularly when it involves solving problems, or figuring out a
+          balance between creative design and meeting deadlines.
+        </span>
       </ParagraphSimple>
       <MeGraph />
-      <ParagraphSimple className='py-5'>
+      <ParagraphSimple className='py-5 text-zinc-200'>
         I'm currently focused on using<span className='font-semibold'> React </span>with
         <span className='font-semibold'> Typescript </span>
         to actualize great ideas. A couple of my everyday tasks include writing reusable components,
         building{' '}
         <a
           href='https://www.educative.io/edpresso/what-is-server-side-rendering'
-          className='underline'
+          className='underline text-zinc-50'
           target={'_blank'}>
           SSR
         </a>{' '}
         /{' '}
         <a
           href='https://developer.mozilla.org/en-US/docs/Glossary/SPA'
-          className='underline'
+          className='underline text-zinc-50'
           target={'_blank'}>
           SPA
         </a>{' '}
         /{' '}
         <a
           href='https://www.freecodecamp.org/news/static-site-generation-with-nextjs/#what-happens-during-static-generation'
-          className='underline'
+          className='underline text-zinc-50'
           target={'_blank'}>
           SSG
         </a>{' '}
         , managing the clients state, writing tests to ensure the{' '}
         <a
-          className='underline'
+          className='underline text-zinc-50'
           href='https://memegenerator.net/img/instances/74108412/one-does-not-simply-center-a-div.jpg'
           target={'_blank'}>
           div stays centered
@@ -104,7 +123,7 @@ const Main = () => {
       </ParagraphSimple>
       <H2Simple>my philosophy</H2Simple>
       <FullLine />
-      <ParagraphSimple className='py-5'>
+      <ParagraphSimple className='py-5 text-zinc-200'>
         I believe that when finding true mastery, you have to always seek and explore new ideas and
         not be afraid to experiment! That's why I'm eager with any challenge brought to me.
       </ParagraphSimple>
