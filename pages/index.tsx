@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
       {/* TODO TRANSITION header disapear */}
       <Header />
-      <FullLine />
+      <FullLine className='opacity-10' />
       <Main />
       <Footer />
     </>
