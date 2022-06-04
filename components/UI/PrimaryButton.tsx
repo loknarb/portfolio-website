@@ -5,7 +5,7 @@ const PrimaryButton: React.FC<
 > = ({ onClick, className, children, ...rest }) => {
   return (
     <button
-      className={`hover:bg-zinc-800 transition-colors duration-500 rounded my-3 px-2 py-2 flex flex-col bg-transparent placeholder:${
+      className={`hover:bg-zinc-800 transition-all duration-500 rounded my-3 px-2 py-2 flex hover:scale-105 flex-col bg-transparent placeholder:${
         className ? className : ''
       }`}
       {...rest}>
