@@ -19,7 +19,6 @@ const CodeBlockSection = () => {
     }, finalSlide);
     return () => clearTimeout(timerSlider);
   }, []);
-  // tablet:justify-around tablet:flex tablet:w-full tablet:flex-1 tablet:p-8
   return (
     <div className='tablet:grid tablet:grid-cols-[3fr,_2fr] tablet:gap-5 phone:m-auto '>
       <div className='flex flex-col items-center'>
@@ -55,7 +54,7 @@ const CodeBlockSection = () => {
         </div>
       </div>
       <div
-        className={`max-w-md px-1 mt-6 mx-auto tablet:mx-0 tablet:mr-auto transition-all duration-700 delay-300 tablet:w-full tablet:flex-1 ${
+        className={`max-w-md px-1 mt-6 -mx-8 tablet:mx-0 tablet:mr-auto transition-all duration-700 delay-300 tablet:w-full tablet:flex-1 ${
           animate ? 'mb-8' : 'mb-72'
         } border rounded shadow-md bg-zinc-800 h-72 shadow-zinc-800 border-zinc-700`}>
         <CuteButtons type='close' />
