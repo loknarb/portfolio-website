@@ -22,6 +22,9 @@ module.exports = {
     extend: {
       height: {
         'half-screen': '50vh'
+      },
+      backgroundImage: {
+        'backgroundNoise' : "url('../public/bg_noise.png'), linear-gradient(to bottom, #18181b, #18181b)",
       }
     }
   },
