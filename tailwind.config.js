@@ -25,6 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         'backgroundNoise' : "url('../public/bg_noise.png'), linear-gradient(to bottom, #18181b, #18181b)",
+        'foregroundNoise' : "url('../public/bg_noise.png'), linear-gradient(to bottom, #27272a, #18181b)",
       }
     }
   },
