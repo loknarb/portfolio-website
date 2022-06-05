@@ -38,10 +38,7 @@ const FocusSection = () => {
           SSG
         </a>{' '}
         , managing the clients state, writing tests to ensure the{' '}
-        <a
-          className='underline text-zinc-50'
-          href='https://memegenerator.net/img/instances/74108412/one-does-not-simply-center-a-div.jpg'
-          target={'_blank'}>
+        <a className='underline text-zinc-50' href='center-div.png' target={'_blank'}>
           div stays centered
         </a>
         , and communicating with the Backend via REST, and Websocket API calls.
