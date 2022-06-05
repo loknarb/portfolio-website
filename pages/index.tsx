@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const [sidebar, setSidebar] = useState<boolean>(true);
   console.log('sidebar', sidebar);
   return (
-    <>
+    <div className='bg-backgroundNoise'>
       <Head>
         <title>Portfolio - Homepage</title>
         <meta name='description' content='created with love by s-brum' />
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <FullLine className='opacity-10' />
       <Main sideBar={sidebar} setSidebar={setSidebar} />
       <Footer />
-    </>
+    </div>
   );
 };
 
