@@ -19,9 +19,9 @@ const CodeBlockSection = () => {
     return () => clearTimeout(timerSlider);
   }, []);
   return (
-    <div className='tablet:justify-around tablet:flex tablet:w-full tablet:flex-1 tablet:p-8 phone:m-auto'>
+    <div className='tablet:justify-around tablet:flex tablet:w-full tablet:flex-1 tablet:p-8 phone:m-auto '>
       <div className='flex flex-col items-center tablet:flex-grow '>
-        <h1 className='text-4xl font-bold text-center font-body -tracking-wider'>
+        <h1 className='text-4xl font-bold text-center tablet:text-6xl font-body -tracking-wider'>
           Web
           <br />
           Developer
@@ -31,19 +31,19 @@ const CodeBlockSection = () => {
             href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ '
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}>
-            <LinkedInLogo />
+            <LinkedInLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
           </a>
           <a
             href='https://github.com/loknarb'
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}>
-            <GithubLogo />
+            <GithubLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
           </a>
           <a
             href='mailto:contact@s-brum.com'
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}>
-            <AtLogo />
+            <AtLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
           </a>
         </div>
       </div>
