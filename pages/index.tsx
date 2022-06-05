@@ -7,7 +7,6 @@ import Main from '../components/Main';
 import FullLine from '../components/UI/FullLine';
 const Home: NextPage = () => {
   const [sidebar, setSidebar] = useState<boolean>(true);
-  console.log('sidebar', sidebar);
   return (
     <div className='bg-backgroundNoise'>
       <Head>
