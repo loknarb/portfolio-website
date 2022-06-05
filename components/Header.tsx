@@ -1,4 +1,6 @@
 import React from 'react';
+import useWindowSize from './hooks/useWindowSize';
+import NavItems from './NavItems';
 import { SetBooleanValue, UseBooleanValue } from './types/types';
 import FullLine from './UI/FullLine';
 import MenuLogo from './UI/MenuLogo';
@@ -7,8 +9,9 @@ const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }
   sideBar,
   setSidebar,
 }) => {
+  const { width } = useWindowSize();
   return (
-    <nav className='flex items-center justify-between flex-1 h-24 px-3 py-3'>
+    <nav className='flex items-center justify-between flex-1 h-24 px-10 py-3'>
       <span className='flex items-center text-5xl font-semibold -tracking-wider font-display'>
         s
         <span className='flex w-5 px-1'>
@@ -18,7 +21,8 @@ const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }
         </span>
         brum
       </span>
-      {sideBar && (
+      {width! >= 992 && <NavItems />}
+      {width! < 992 && sideBar && (
         <PrimaryButton onClick={() => setSidebar(false)}>
           <MenuLogo />
         </PrimaryButton>
