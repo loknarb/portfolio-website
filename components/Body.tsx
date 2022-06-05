@@ -13,8 +13,8 @@ const Body = () => {
       <GridPoints />
       <AboutSection />
       <FocusSection />
-      <PhilosophySection />
       <ProjectSection />
+      <PhilosophySection />
     </>
   );
 };
