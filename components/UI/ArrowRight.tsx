@@ -1,6 +1,6 @@
 const ArrowRight = ({ color, className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
-    className={className ? className : 'w-6 h-6'}
+    className={className ? className : 'w-7 h-7'}
     viewBox='0 0 24 24'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
