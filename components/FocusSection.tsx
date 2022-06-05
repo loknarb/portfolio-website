@@ -7,7 +7,11 @@ const FocusSection = () => {
   return (
     <div className='max-w-4xl p-6 rounded tablet:mx-auto bg-foregroundNoise'>
       <H2Simple className='tablet:relative'>what am i up to?</H2Simple>
-      <FullLine className='tablet:w-64 ' />
+      <div className='flex tablet:w-60'>
+        <FullLine className='w-20 border-yellow-200' />
+        <FullLine className='w-20 border-pink-300' />
+        <FullLine className='w-20 border-green-300' />
+      </div>
       <ParagraphSimple className='py-5 text-zinc-200'>
         I'm currently focused on using<span className='font-semibold'> React </span>with
         <span className='font-semibold'> Typescript </span>
