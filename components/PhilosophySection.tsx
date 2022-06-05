@@ -5,14 +5,14 @@ import ParagraphSimple from './UI/ParagraphSimple';
 
 const PhilosophySection = () => {
   return (
-    <>
+    <div className='max-w-4xl p-6 rounded tablet:mx-auto bg-foregroundNoise'>
       <H2Simple>my philosophy</H2Simple>
       <FullLine className='tablet:w-60' />
       <ParagraphSimple className='py-5 text-zinc-200'>
         I believe that when finding true mastery, you have to always seek and explore new ideas and
-        not be afraid to experiment! That's why I'm eager with any challenge brought to me.
+        not be afraid to experiment! That's why I'm eager with any challenge.
       </ParagraphSimple>
-    </>
+    </div>
   );
 };
 
