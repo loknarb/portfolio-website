@@ -18,7 +18,7 @@ const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBoolean
           sideBar ? 'translate-x-64' : 'translate-x-0'
         }`}>
         <div className='self-end'>
-          <PrimaryButton className={`${!sideBar && 'rotate-180'}`} onClick={() => setSidebar(true)}>
+          <PrimaryButton className={`my-2`} onClick={() => setSidebar(true)}>
             <ArrowRight />
           </PrimaryButton>
         </div>
