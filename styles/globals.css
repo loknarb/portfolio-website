@@ -16,7 +16,7 @@
     /*--bg-color: white rgb(39 39 42);*/
     --bg-color: rgb(39 39 42);
     /* ! Never change this from s it has to remain s */
-    --typewriterSpeed: 2s;
+    --typewriterSpeed: 500ms;
     --line1Characters: 23;
     --line2Characters: 20;
     --line3Characters: 29;
