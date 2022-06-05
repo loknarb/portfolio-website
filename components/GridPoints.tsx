@@ -9,7 +9,7 @@ import WebDevIcon from './UI/WebDevIcon';
 const GridPoints = () => {
   return (
     <div className='grid tablet:grid-cols-3 p-8 tablet:gap-14 gap-14 max-w-7xl w-[90%] mx-auto tablet:bg-foregroundNoise rounded'>
-      <PrimaryCard className='bg-foreGroundNoise'>
+      <PrimaryCard>
         <WebDevIcon />
         <H2Simple className='my-2 lowercase'>Web Development</H2Simple>
         <ParagraphSimple className='text-center'>
@@ -17,14 +17,14 @@ const GridPoints = () => {
           Express, ...etc.
         </ParagraphSimple>
       </PrimaryCard>
-      <PrimaryCard className='bg-foreGroundNoise'>
+      <PrimaryCard>
         <PaperIcon />
         <H2Simple className='my-2 lowercase'>Brand Strategy</H2Simple>
         <ParagraphSimple className='text-center'>
           We will figure out how best to exemplify your brand and push its awareness
         </ParagraphSimple>
       </PrimaryCard>
-      <PrimaryCard className='bg-foreGroundNoise'>
+      <PrimaryCard>
         <DesignIcon />
         <H2Simple className='my-2 lowercase'>Web Design</H2Simple>
         <ParagraphSimple className='text-center'>
