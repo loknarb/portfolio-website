@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AtLogo from './UI/AtLogo';
 import CuteButtons from './UI/CuteButtons';
+import FullLine from './UI/FullLine';
 import GithubLogo from './UI/GithubLogo';
 import LinkedInLogo from './UI/LinkedInLogo';
 import PrefixCode from './UI/Prefix';
@@ -10,21 +11,27 @@ const CodeBlockSection = () => {
 
   useEffect(() => {
     const y = getComputedStyle(document.body).getPropertyValue('--typewriterSpeed');
-    const typeWriterSpeed = parseInt(y.split('s')[0]);
-    const finalSlide = 1000 * (10 * (typeWriterSpeed + 1));
+    const typeWriterSpeed = parseInt(y.split('ms')[0]);
+    const finalSlide = 3 * (10 * typeWriterSpeed);
     // const final = finalSlide.toString().concat('ms');
     const timerSlider = setTimeout(() => {
       setAnimate(true);
     }, finalSlide);
     return () => clearTimeout(timerSlider);
   }, []);
+  // tablet:justify-around tablet:flex tablet:w-full tablet:flex-1 tablet:p-8
   return (
-    <div className='tablet:justify-around tablet:flex tablet:w-full tablet:flex-1 tablet:p-8 phone:m-auto '>
-      <div className='flex flex-col items-center tablet:flex-grow '>
-        <h1 className='text-4xl font-bold text-center tablet:text-6xl font-body -tracking-wider'>
+    <div className='tablet:grid tablet:grid-cols-[3fr,_2fr] tablet:gap-5 phone:m-auto '>
+      <div className='flex flex-col items-center'>
+        <h1 className='p-8 text-4xl font-bold text-center tablet:text-6xl font-body -tracking-wider'>
           Web
           <br />
           Developer
+          <span className='flex'>
+            <FullLine className='w-20 border-yellow-200' />
+            <FullLine className='w-20 border-pink-300' />
+            <FullLine className='w-20 border-green-300' />
+          </span>
         </h1>
         <div className='flex flex-1 w-64 px-8 my-4 justify-evenly'>
           <a
@@ -48,9 +55,9 @@ const CodeBlockSection = () => {
         </div>
       </div>
       <div
-        className={`max-w-md px-1 mt-6 mx-auto transition-all duration-700 delay-300 tablet:flex-1 ${
+        className={`max-w-md px-1 mt-6 mx-auto tablet:mx-0 tablet:mr-auto transition-all duration-700 delay-300 tablet:w-full tablet:flex-1 ${
           animate ? 'mb-8' : 'mb-72'
-        } border rounded shadow-md bg-zinc-800 h-64 shadow-zinc-800 border-zinc-700`}>
+        } border rounded shadow-md bg-zinc-800 h-72 shadow-zinc-800 border-zinc-700`}>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
         <CuteButtons type='zoom' />
