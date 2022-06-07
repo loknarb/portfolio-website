@@ -15,7 +15,7 @@ const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBoolean
         }`}
         onClick={() => setSidebar(true)}></div>
       <aside
-        className={`py-4 px-10 top-0 right-0 h-42 w-48 z-40 flex-col flex fixed bg-transparent  shadow-sm  transistion-transform ease-in-out -translate-x-64 w-55 duration-300 rounded-bl  ${
+        className={`py-4 px-10 top-0 right-0 h-42 w-54 z-40 flex-col flex fixed bg-transparent  shadow-sm  transistion-transform ease-in-out -translate-x-64 w-55 duration-300 rounded-bl  ${
           sideBar ? 'translate-x-64' : 'translate-x-0'
         }`}>
         <div className='self-end'>
