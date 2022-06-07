@@ -17,18 +17,26 @@ const ProjectSection = () => {
             <FullLine className='w-20 border-green-300' />
           </div>
           <div className='grid grid-cols-2 gap-2 w-[85%] mx-auto my-4 tablet:grid-cols-3 desktop:gap-20'>
-            <PrimaryButton className='justify-around tablet:h-32 hover:border hover:border-zinc-600 hover:shadow-pink-300/10'>
-              <span className='text-lg leading-4 font-display -tracking-wider'>news-gallery</span>
-              <span className='text-sm font-body'>react / typescript </span>
-            </PrimaryButton>
-            <PrimaryButton className='justify-around border rounded tablet:h-32 hover:border-zinc-600 hover:shadow-green-300/10'>
-              <span className='text-lg leading-4 font-display -tracking-wider'>stopwatch</span>
-              <span className='text-sm font-body'>python / tkinter </span>
-            </PrimaryButton>
-            <PrimaryButton className='justify-around border rounded tablet:h-32 hover:border-zinc-600 hover:shadow-yellow-200/10'>
-              <span className='text-lg leading-4 font-display -tracking-wider'>state-comparer</span>
-              <span className='text-sm font-body'>react / typescript </span>
-            </PrimaryButton>
+            <a href='https://github.com/loknarb/news-gallery'>
+              <PrimaryButton className='justify-around tablet:h-32 hover:border hover:border-zinc-600 hover:shadow-pink-300/10'>
+                <span className='text-lg leading-4 font-display -tracking-wider'>news-gallery</span>
+                <span className='text-sm font-body'>react / typescript </span>
+              </PrimaryButton>
+            </a>
+            <a href='https://github.com/loknarb/stopwatch'>
+              <PrimaryButton className='justify-around border rounded tablet:h-32 hover:border-zinc-600 hover:shadow-green-300/10'>
+                <span className='text-lg leading-4 font-display -tracking-wider'>stopwatch</span>
+                <span className='text-sm font-body'>python / tkinter </span>
+              </PrimaryButton>
+            </a>
+            <a href='https://github.com/loknarb/state-management-comparison'>
+              <PrimaryButton className='justify-around border rounded tablet:h-32 hover:border-zinc-600 hover:shadow-yellow-200/10'>
+                <span className='text-lg leading-4 font-display -tracking-wider'>
+                  state-comparer
+                </span>
+                <span className='text-sm font-body'>react / typescript </span>
+              </PrimaryButton>
+            </a>
           </div>
         </div>
       </div>
