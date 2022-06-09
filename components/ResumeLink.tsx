@@ -4,7 +4,7 @@ import PrimaryButton from './UI/PrimaryButton';
 const ResumeLink = () => {
   return (
     <PrimaryButton>
-      <a href='Resume_2022.pdf' target={'_blank'}>
+      <a href='Resume_2022_en.pdf' target={'_blank'}>
         Resume/CV
       </a>
     </PrimaryButton>
