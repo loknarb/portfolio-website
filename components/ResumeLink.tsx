@@ -3,7 +3,7 @@ import PrimaryButton from './UI/PrimaryButton';
 
 const ResumeLink = () => {
   return (
-    <PrimaryButton>
+    <PrimaryButton className='justify-center'>
       <a href='Resume_2022_en.pdf' target={'_blank'}>
         Resume/CV
       </a>
