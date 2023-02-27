@@ -1,7 +1,7 @@
 import React from 'react';
 import BlackDesktop from './UI/BlackDesktop';
-import FullLine from './UI/FullLine';
 import H2Simple from './UI/H2Simple';
+import LineGroup from './UI/LineGroup';
 import PrimaryButton from './UI/PrimaryButton';
 
 const ProjectSection = () => {
@@ -12,9 +12,7 @@ const ProjectSection = () => {
         <div className='max-w-4xl p-4 border rounded shadow-md border-zinc-600 border-opacity-20 tablet:mx-auto shadow-zinc-800'>
           <H2Simple>projects</H2Simple>
           <div className='flex tablet:w-60'>
-            <FullLine className='w-20 border-yellow-200' />
-            <FullLine className='w-20 border-pink-300' />
-            <FullLine className='w-20 border-green-300' />
+            <LineGroup length='w-20' />
           </div>
           <div className='grid grid-cols-2 gap-2 w-[85%] mx-auto my-4 tablet:grid-cols-3 desktop:gap-20'>
             <a href='https://github.com/loknarb/news-gallery'>

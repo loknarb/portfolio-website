@@ -1,6 +1,6 @@
 import React from 'react';
-import FullLine from './UI/FullLine';
 import H2Simple from './UI/H2Simple';
+import LineGroup from './UI/LineGroup';
 import ParagraphSimple from './UI/ParagraphSimple';
 
 const FocusSection = () => {
@@ -8,9 +8,7 @@ const FocusSection = () => {
     <div className='max-w-4xl p-6 rounded tablet:mx-auto bg-foregroundNoise'>
       <H2Simple className='tablet:relative'>what am i up to?</H2Simple>
       <div className='flex tablet:w-60'>
-        <FullLine className='w-20 border-yellow-200' />
-        <FullLine className='w-20 border-pink-300' />
-        <FullLine className='w-20 border-green-300' />
+        <LineGroup length='w-20' />
       </div>
       <ParagraphSimple className='py-5 text-zinc-200'>
         I'm currently focused on using<span className='font-semibold'> React </span>with
