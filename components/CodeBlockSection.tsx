@@ -28,9 +28,6 @@ const CodeBlockSection = () => {
       <div className='flex flex-col items-center'>
         <h1 className='p-8 text-4xl font-bold text-center tablet:text-6xl font-body -tracking-wider'>
           <p dangerouslySetInnerHTML={{ __html: t('Main.JobPosition') }} />
-          {/* Web
-          <br />
-          Developer */}
           <span className='flex'>
             <LineGroup length={locale === 'en' ? 'w-20' : 'w-[5.5rem]'} />
           </span>
