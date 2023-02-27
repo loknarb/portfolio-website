@@ -2,7 +2,6 @@ import React from 'react';
 import useWindowSize from './hooks/useWindowSize';
 import NavItems from './NavItems';
 import { SetBooleanValue, UseBooleanValue } from './types/types';
-import FullLine from './UI/FullLine';
 import LineGroup from './UI/LineGroup';
 import MenuLogo from './UI/MenuLogo';
 import PrimaryButton from './UI/PrimaryButton';
