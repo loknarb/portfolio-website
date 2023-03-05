@@ -31,7 +31,7 @@
   }
 
   div#code-window:hover {
-    --bg-color: rgb(82 82 91);
+    --bg-color: rgb(45, 45, 49);
     background: var(--bg-color);
   }
   code {
