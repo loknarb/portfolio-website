@@ -1,0 +1,48 @@
+{
+  "home": {
+    "title": "Portfolio - Startseite"
+  },
+  "main": {
+    "job_position": "Web<br />Entwickler"
+  },
+  "header": {
+    "resume": "Lebenslauf"
+  },
+  "target_language": "EN",
+  "current_language": "DE",
+  "web_design": {
+    "title": "Webdesign",
+    "text": "Du und ich werden eine ästhetisch ansprechende Website gestalten, die skalierbar ist."
+  },
+  "brand_strategy": {
+    "title": "Markenstrategie",
+    "text": "Wir werden herausfinden, wie wir Ihre Marke am besten darstellen und ihre Bekanntheit steigern können."
+  },
+  "mission": {
+    "title": "Webentwicklung",
+    "text": "Ich werde eine skalierbare und responsive Website mit Tools wie React, Nextjs, Express, ... usw. entwickeln."
+  },
+  "about": {
+    "title": "Über mich",
+    "text": "Hey, mein Name ist <1> Sebastien</1>, ein neugieriger Entwickler, insbesondere wenn es darum geht, Probleme zu lösen oder eine Balance zwischen kreativem Design und Einhaltung von Deadlines zu finden."
+  },
+  "focus": {
+    "title": "Mein Fokus",
+    "text": "Ich konzentriere mich derzeit darauf, <1>React</1> mit <3>TypeScript</3> zu verwenden, um großartige Ideen zu verwirklichen. Ein paar meiner täglichen Aufgaben umfassen das Schreiben von wiederverwendbaren Komponenten, das Erstellen von <5>SSR</5>/<7>SPA</7>/<9>SSG</9>, das Verwalten des Clientzustands, das Schreiben von Tests, um sicherzustellen, dass <11>das Div zentriert bleibt</11>, und die Kommunikation mit dem Backend über REST-, GraphQL- und Websocket-API-Aufrufe."
+  },
+  "projects": {
+    "title": "Projekte",
+    "text": "Hier finden Sie einige meiner Projekte:"
+  },
+  "philosophy": {
+    "title": "Meine Philosophie",
+    "text": "Ich glaube, dass man immer neue Ideen suchen und erkunden und keine Angst vor Experimenten haben sollte, um echte Meisterschaft zu erreichen! Deshalb bin ich immer bereit für jede Herausforderung, die mir begegnet."
+  },
+  "still_curious": {
+    "title": "Immer noch neugierig?",
+    "text": "Lass uns sprechen."
+  },
+  "footer": {
+    "text": "© 2022 - Entwickelt und gestaltet mit ♡. Hergestellt mit NextJS, TailwindCSS und React. Gehostet auf Vercel."
+  }
+}

@@ -15,6 +15,7 @@
   :root {
     /*--bg-color: white rgb(39 39 42);*/
     --bg-color: rgb(39 39 42);
+
     /* ! Never change this from s it has to remain s */
     --typewriterSpeed: 500ms;
     --line1Characters: 23;
@@ -29,6 +30,10 @@
     --line10Characters: 9;
   }
 
+  div#code-window:hover {
+    --bg-color: rgb(45, 45, 49);
+    background: var(--bg-color);
+  }
   code {
     position: relative;
     width: max-content;
@@ -42,7 +47,8 @@
     width: max-content;
   } */
 
-  code::before, code::after {
+  code::before,
+  code::after {
     content: '';
     position: absolute;
     top: 0;
@@ -122,14 +128,14 @@
     width: 0.125em;
     @apply bg-transparent;
     animation: typewriter var(--typewriterSpeed) steps(var(--line1Characters)) 1s forwards,
-      blink var(--typewriterSpeed) 1s 1 ;
+      blink var(--typewriterSpeed) 1s 1;
   }
   code#line2::after {
     width: 0.125em;
     @apply bg-transparent;
     animation: typewriter var(--typewriterSpeed) steps(var(--line2Characters))
         calc((var(--typewriterSpeed) + 2s)) forwards,
-      blink var(--typewriterSpeed) calc((var(--typewriterSpeed) + 2s)) 1 ;
+      blink var(--typewriterSpeed) calc((var(--typewriterSpeed) + 2s)) 1;
   }
   code#line3::after {
     width: 0.125em;
@@ -186,7 +192,7 @@
     width: 0.125em;
     animation: typewriter var(--typewriterSpeed) steps(var(--line10Characters))
         calc(9 * (var(--typewriterSpeed) + 1s)) forwards,
-        blink2 3000ms ease-in-out calc(9 * (var(--typewriterSpeed) + 1s)) infinite;
+      blink2 3000ms ease-in-out calc(9 * (var(--typewriterSpeed) + 1s)) infinite;
   }
   /* div#line1 {
     @apply opacity-0;
@@ -194,32 +200,32 @@
   }   */
   div#line2 {
     @apply opacity-0;
-    animation: show 2s ease-in calc(var(--typewriterSpeed)) 1 forwards
-  }  
+    animation: show 2s ease-in calc(var(--typewriterSpeed)) 1 forwards;
+  }
   div#line3 {
     @apply opacity-0;
     animation: show 2s ease-in calc(2 * (var(--typewriterSpeed) + 1s)) 1 forwards;
-  }  
+  }
   div#line4 {
     @apply opacity-0;
     animation: show 2s ease-in calc(3 * (var(--typewriterSpeed) + 1s)) 1 forwards;
-  }  
+  }
   div#line5 {
     @apply opacity-0;
     animation: show 2s ease-in calc(4 * (var(--typewriterSpeed))) 1 forwards;
-  }  
+  }
   div#line8 {
     @apply opacity-0;
-    animation: show 2s ease-in calc(7 * (var(--typewriterSpeed)  + 1s)) 1 forwards;
-  }  
+    animation: show 2s ease-in calc(7 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }
   div#line9 {
     @apply opacity-0;
-    animation: show 2s ease-in calc(8 * (var(--typewriterSpeed)  + 1s)) 1 forwards;
-  }  
+    animation: show 2s ease-in calc(8 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }
   div#line10 {
     @apply opacity-0;
-    animation: show 2s ease-in calc(9 * (var(--typewriterSpeed)  + 1s)) 1 forwards;
-  }  
+    animation: show 2s ease-in calc(9 * (var(--typewriterSpeed) + 1s)) 1 forwards;
+  }
   @keyframes typewriter {
     to {
       left: 100%;
@@ -227,7 +233,7 @@
   }
   @keyframes show {
     to {
-      @apply opacity-100
+      @apply opacity-100;
     }
   }
   @keyframes blink2 {

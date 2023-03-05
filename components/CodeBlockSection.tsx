@@ -1,14 +1,17 @@
+import { Trans, useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import AtLogo from './UI/AtLogo';
 import CuteButtons from './UI/CuteButtons';
-import FullLine from './UI/FullLine';
 import GithubLogo from './UI/GithubLogo';
+import LineGroup from './UI/LineGroup';
 import LinkedInLogo from './UI/LinkedInLogo';
 import PrefixCode from './UI/Prefix';
 
 const CodeBlockSection = () => {
   const [animate, setAnimate] = useState(false);
-
+  const { locale } = useRouter();
+  const { t } = useTranslation('common');
   useEffect(() => {
     const y = getComputedStyle(document.body).getPropertyValue('--typewriterSpeed');
     const typeWriterSpeed = parseInt(y.split('ms')[0]);
@@ -23,13 +26,13 @@ const CodeBlockSection = () => {
     <div className='tablet:grid tablet:grid-cols-[3fr,_2fr] tablet:gap-5 phone:m-auto '>
       <div className='flex flex-col items-center'>
         <h1 className='p-8 text-4xl font-bold text-center tablet:text-6xl font-body -tracking-wider'>
-          Web
-          <br />
-          Developer
+          <Trans i18nKey={'main.job_position'}>
+            Web
+            <br />
+            Developer
+          </Trans>
           <span className='flex'>
-            <FullLine className='w-20 border-yellow-200' />
-            <FullLine className='w-20 border-pink-300' />
-            <FullLine className='w-20 border-green-300' />
+            <LineGroup length={locale === 'en' ? 'w-20' : 'w-[5.5rem]'} />
           </span>
         </h1>
         <div className='flex flex-1 w-64 px-8 my-4 justify-evenly'>
@@ -54,7 +57,8 @@ const CodeBlockSection = () => {
         </div>
       </div>
       <div
-        className={`max-w-md px-1 mt-6 -mx-8 tablet:mx-0 tablet:mr-auto transition-all duration-700 delay-300 tablet:w-full tablet:flex-1 ${
+        id='code-window'
+        className={`max-w-md px-1 mt-6 -mx-8 tablet:mx-0 tablet:mr-auto transition-transform duration-700 delay-300 tablet:w-full tablet:flex-1 ${
           animate ? 'mb-8' : 'mb-72'
         } border rounded shadow-md bg-zinc-800 h-72 shadow-zinc-800 border-zinc-700`}>
         <CuteButtons type='close' />

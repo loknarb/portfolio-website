@@ -1,27 +1,29 @@
+import { useTranslation } from 'next-i18next';
 import React from 'react';
 import AtLogo from './UI/AtLogo';
-import FullLine from './UI/FullLine';
 import GithubLogo from './UI/GithubLogo';
+import LineGroup from './UI/LineGroup';
 import LinkedInLogo from './UI/LinkedInLogo';
 
 const Footer = () => {
+  const { t } = useTranslation('common');
   return (
     <>
       <div className='flex mt-20'>
-        <FullLine className='w-1/3 border-yellow-200' />
-        <FullLine className='w-1/3 border-pink-300' />
-        <FullLine className='w-1/3 border-green-300' />
+        <LineGroup length={'w-1/3'} />
       </div>
-      <div className='flex flex-row bg-transparent h-44'>
-        <div className='flex-auto flex-grow-[35] w-[35%] flex items-center p-4'>
-          <h2 className='font-mono text-2xl tablet:text-4xl -tracking-wide'>still curious?</h2>
+      <div className='flex flex-col justify-center mt-6 text-center bg-transparent tablet:mt-12 tablet:flex-row h-44'>
+        <div className='flex-auto flex-grow-[50] w-[50%] flex items-center p-4 justify-center'>
+          <h2 className='font-mono text-2xl tablet:text-4xl -tracking-wide'>
+            {t('still_curious.title')}
+          </h2>
         </div>
-        <div className='flex-auto flex-grow-[65] w-[65%] flex flex-col items-center justify-center  text-zinc-900px-2 '>
-          <h2 className='py-2 font-mono text-2xl tablet:text-4xl -tracking-wide'>lets talk</h2>
+        <div className='flex-auto tablet:flex-grow-[50] tablet:w-[50%] flex flex-col items-center justify-center text-zinc-900px-2'>
+          <h2 className='py-2 font-mono text-2xl tablet:text-4xl -tracking-wide'>
+            {t('still_curious.text')}
+          </h2>
           <div className='flex w-48 mx-auto'>
-            <FullLine className='w-1/3 border-yellow-200' />
-            <FullLine className='w-1/3 border-pink-300' />
-            <FullLine className='w-1/3 border-green-300' />
+            <LineGroup length='w-1/3' />
           </div>
           <div className='text-sm tablet:text-lg font-body'>
             <div className='flex flex-1 w-64 px-8 my-4 justify-evenly'>
@@ -47,11 +49,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='w-5/6 py-4 mx-auto tablet:w-1/2'>
-        <small className='font-sm'>
-          © 2022 — Built & Designed with ♡. Made with NextJS, TailwindCSS, and React. Hosted on
-          Vercel.
-        </small>
+      <div className='w-5/6 py-4 mx-auto mt-6 text-center '>
+        <small className='text-xs tablet:text-sm'>{t('footer.text')}</small>
       </div>
     </>
   );
