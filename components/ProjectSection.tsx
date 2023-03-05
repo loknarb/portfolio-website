@@ -1,16 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import BlackDesktop from './UI/BlackDesktop';
 import H2Simple from './UI/H2Simple';
 import LineGroup from './UI/LineGroup';
 import PrimaryButton from './UI/PrimaryButton';
 
 const ProjectSection = () => {
+  const { t } = useTranslation('common');
   return (
     <>
       <div className='items-center w-full my-20 tablet:flex-row-reverse tablet:flex tablet:justify-evenly desktop:px-44 '>
         <BlackDesktop className=' mx-auto tablet:py-0 tablet:mx-0 tablet:flex-1 tablet:flex-shrink-0 tablet:h-[400px] tablet:w-[400px] w-64 h-64 tablet:ml-8 -mb-6' />
         <div className='max-w-4xl p-4 border rounded shadow-md border-zinc-600 border-opacity-20 tablet:mx-auto shadow-zinc-800'>
-          <H2Simple>projects</H2Simple>
+          <H2Simple>{t('projects.title')}</H2Simple>
           <div className='flex tablet:w-60'>
             <LineGroup length='w-20' />
           </div>
