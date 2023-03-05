@@ -21,7 +21,7 @@ const Home: NextPage = () => {
   return (
     <div className='bg-backgroundNoise'>
       <Head>
-        <title>{t('Home.Title')}</title>
+        <title>{t('home.title')}</title>
         <meta name='description' content='created with love by s-brum' />
         <link rel='icon' href='/favicon.png' />
       </Head>
