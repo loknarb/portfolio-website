@@ -1,6 +1,48 @@
 {
-  "Home.Title": "Portfolio - Homepage",
-  "Main.JobPosition": "Web<br />Developer",
+  "home": {
+    "title": "Portfolio - Homepage"
+  },
+  "main": {
+    "job_position": "Web<br />Developer"
+  },
+  "header": {
+    "resume": "Resume"
+  },
   "target_language": "DE",
-  "current_language": "EN"
+  "current_language": "EN",
+  "web_design": {
+    "title": "Web Design",
+    "text": "You and I will design an aesthetically pleasing website, capable of being scaled."
+  },
+  "brand_strategy": {
+    "title": "Brand Strategy",
+    "text": "We will figure out how best to exemplify your brand and push its awareness."
+  },
+  "mission": {
+    "title": "Web Development",
+    "text": "I will develop a scalable and responsive website with tools such as React, Nextjs, Express, ...etc."
+  },
+  "about": {
+    "title": "About",
+    "text": "Hey my name is <1> Sebastien</1>, an intrigued developer, particularly when it involves solving problems, or figuring out a balance between creative design and meeting deadlines."
+  },
+  "focus": {
+    "title": "My Focus",
+    "text": "I'm currently focused on using <1>React</1> with <3>Typescript</3> to actualize great ideas. A couple of my everyday tasks include writing reusable components, building <5>SSR</5> / <7>SPA</7> / <9>SSG</9>, managing the clients state, writing tests to ensure the <11>div stays centered</11>, and communicating with the Backend via REST, GraphQL, and Websocket API calls."
+  },
+  "projects": {
+    "title": "Projects",
+    "text": "Here are some of my projects:"
+  },
+  "philosophy": {
+    "title": "My Philosophy",
+    "text": "I believe that when finding true mastery, one must always seek and explore new ideas and not be afraid to experiment! That's why I'm always eager with any challenge that I face."
+  },
+  "still_curious": {
+    "title": "Still curious?",
+    "text": "Let's talk."
+  },
+  "footer": {
+    "text": "© 2022 — Built & Designed with ♡. Made with NextJS, TailwindCSS, and React. Hosted on Vercel."
+  }
 }
