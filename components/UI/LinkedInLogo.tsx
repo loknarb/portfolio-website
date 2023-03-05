@@ -1,25 +1,31 @@
 import React from 'react';
-
-const LinkedInLogo = ({ color, className, ...rest }: React.SVGProps<SVGSVGElement>) => (
+import clsx from 'clsx';
+const LinkedInLogo = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => (
   <svg
-    className={className ? className : 'w-7 h-7'}
-    viewBox='0 0 28 28'
-    fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    xmlnsXlink='http://www.w3.org/1999/xlink'
+    version='1.1'
+    viewBox='0 0 256 256'
+    className={clsx('w-7 h-7', className)}
+    xmlSpace='preserve'
     {...rest}>
-    <rect className={className ? className : 'w-7 h-7'} rx='9' fill={color ? color : 'white'} />
-    <path
-      fillRule='evenodd'
-      clipRule='evenodd'
-      d='M15.1631 12.5754V12.5345C15.1547 12.5482 15.1431 12.5619 15.1359 12.5754H15.1631Z'
-      fill='#18181b'
-    />
-    <path
-      fillRule='evenodd'
-      clipRule='evenodd'
-      d='M0 0V28H28V0H0ZM8.70905 23.2617H4.55483V10.7634H8.70905V23.2617ZM6.63194 9.0576H6.60449C5.21095 9.0576 4.30769 8.09754 4.30769 6.89754C4.30769 5.6712 5.23735 4.73834 6.65914 4.73834C8.08123 4.73834 8.95514 5.6712 8.98234 6.89754C8.98234 8.09754 8.08123 9.0576 6.63194 9.0576ZM23.6923 23.2617H19.537V16.5751C19.537 14.8956 18.9366 13.7492 17.4327 13.7492C16.2841 13.7492 15.6016 14.5211 15.3009 15.2688C15.1916 15.5359 15.1631 15.9071 15.1631 16.2817V23.2617H11.007C11.007 23.2617 11.0626 11.936 11.007 10.7635H15.1631V12.5345C15.7153 11.6849 16.7007 10.4701 18.9081 10.4701C21.6426 10.4701 23.6923 12.2559 23.6923 16.0946V23.2617Z'
-      fill='#18181b'
-    />
+    <defs></defs>
+    <g
+      className={clsx('text-black opacity-100 fill-white', className)}
+      transform='translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)'>
+      <path
+        d='M 1.48 29.91 h 18.657 v 60.01 H 1.48 V 29.91 z M 10.809 0.08 c 5.963 0 10.809 4.846 10.809 10.819 c 0 5.967 -4.846 10.813 -10.809 10.813 C 4.832 21.712 0 16.866 0 10.899 C 0 4.926 4.832 0.08 10.809 0.08'
+        className={clsx('text-black opacity-100 fill-white', className)}
+        transform=' matrix(1 0 0 1 0 0) '
+        strokeLinecap='round'
+      />
+      <path
+        d='M 31.835 29.91 h 17.89 v 8.206 h 0.255 c 2.49 -4.72 8.576 -9.692 17.647 -9.692 C 86.514 28.424 90 40.849 90 57.007 V 89.92 H 71.357 V 60.737 c 0 -6.961 -0.121 -15.912 -9.692 -15.912 c -9.706 0 -11.187 7.587 -11.187 15.412 V 89.92 H 31.835 V 29.91 z'
+        className={clsx('text-black opacity-100 fill-white', className)}
+        transform=' matrix(1 0 0 1 0 0) '
+        strokeLinecap='round'
+      />
+    </g>
   </svg>
 );
 
