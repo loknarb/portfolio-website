@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next';
+import { Trans, useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import AtLogo from './UI/AtLogo';
@@ -11,7 +11,6 @@ import PrefixCode from './UI/Prefix';
 const CodeBlockSection = () => {
   const [animate, setAnimate] = useState(false);
   const { locale } = useRouter();
-  console.log(locale);
   const { t } = useTranslation('common');
   useEffect(() => {
     const y = getComputedStyle(document.body).getPropertyValue('--typewriterSpeed');
@@ -27,7 +26,11 @@ const CodeBlockSection = () => {
     <div className='tablet:grid tablet:grid-cols-[3fr,_2fr] tablet:gap-5 phone:m-auto '>
       <div className='flex flex-col items-center'>
         <h1 className='p-8 text-4xl font-bold text-center tablet:text-6xl font-body -tracking-wider'>
-          <p dangerouslySetInnerHTML={{ __html: t('Main.JobPosition') }} />
+          <Trans i18nKey={'main.job_position'}>
+            Web
+            <br />
+            Developer
+          </Trans>
           <span className='flex'>
             <LineGroup length={locale === 'en' ? 'w-20' : 'w-[5.5rem]'} />
           </span>
