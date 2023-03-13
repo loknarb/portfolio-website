@@ -1,5 +1,6 @@
 import React from 'react';
 import useWindowSize from './hooks/useWindowSize';
+import { LanguageSwitch } from './LanguageSwitch';
 import NavItems from './NavItems';
 import { SetBooleanValue, UseBooleanValue } from './types/types';
 import LineGroup from './UI/LineGroup';
@@ -21,9 +22,12 @@ const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }
       </span>
       {width! >= 992 && <NavItems />}
       {width! < 992 && sideBar && (
-        <PrimaryButton onClick={() => setSidebar(false)}>
-          <MenuLogo />
-        </PrimaryButton>
+        <div className='flex justify-end'>
+          <LanguageSwitch width={'25px'} height={'25px'} />
+          <PrimaryButton onClick={() => setSidebar(false)} className='ml-4'>
+            <MenuLogo />
+          </PrimaryButton>
+        </div>
       )}
     </nav>
   );
