@@ -1,6 +1,7 @@
 import { Trans, useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import { useLocaleString } from './hooks/useLocaleString';
 import AtLogo from './UI/AtLogo';
 import CuteButtons from './UI/CuteButtons';
 import GithubLogo from './UI/GithubLogo';
@@ -10,8 +11,7 @@ import PrefixCode from './UI/Prefix';
 
 const CodeBlockSection = () => {
   const [animate, setAnimate] = useState(false);
-  const { locale } = useRouter();
-  const { t } = useTranslation('common');
+  const { locale } = useLocaleString();
   useEffect(() => {
     const y = getComputedStyle(document.body).getPropertyValue('--typewriterSpeed');
     const typeWriterSpeed = parseInt(y.split('ms')[0]);
