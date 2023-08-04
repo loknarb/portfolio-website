@@ -6,7 +6,7 @@ const NavItems = () => {
   return (
     <div className='flex gap-4 '>
       <LanguageSwitch width={'30px'} height={'30px'} />
-      <ResumeLink />
+      <ResumeLink button />
     </div>
   );
 };

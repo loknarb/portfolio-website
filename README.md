@@ -24,5 +24,5 @@ Heres a list of features where I'm unsure if its actually necessary
 ## Want to give the project a go?
 #### `yarn dev`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

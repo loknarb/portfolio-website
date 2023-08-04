@@ -43,6 +43,24 @@
     "text": "Lass uns sprechen."
   },
   "footer": {
-    "text": "© 2022 - Entwickelt und gestaltet mit ♡. Hergestellt mit NextJS, TailwindCSS und React. Gehostet auf Vercel."
+    "text": "© 2023 - Entwickelt und gestaltet mit ♡"
+  },
+  "privacy": {
+    "headline": "Datenschutzrichtlinie",
+    "headline_text": "s-brum nimmt Ihren Datenschutz ernst. Um Ihren Datenschutz besser zu schützen, stelle ich diese Datenschutzerklärung zur Verfügung, die erläutert, wie Ihre persönlichen Informationen gesammelt und verwendet werden.",
+    "collection_headlines": "Routineinformationen sammeln",
+    "collection_text": "Diese Website erfasst grundlegende Informationen über ihre Besucher. Dazu gehören unter anderem IP-Adressen, Browserdetails, Zeitstempel und verweisende Seiten. Keine dieser Informationen kann bestimmte Besucher dieser Website persönlich identifizieren. Die Informationen werden aus Gründen der routinemäßigen Verwaltung und Wartung erfasst.",
+    "cookies_headline": "Cookies",
+    "cookies_text": "Diese Website verwendet bei Bedarf Cookies, um Informationen über die Vorlieben und den Verlauf eines Besuchers zu speichern, um den Besucher besser zu bedienen und/oder ihm maßgeschneiderte Inhalte zu präsentieren.",
+    "advertising_headline": "Werbepartner und andere Dritte",
+    "advertising_text": "Werbepartner und andere Dritte können Cookies, Skripte und/oder Web-Beacons verwenden, um die Aktivitäten von Besuchern auf dieser Website zu verfolgen, um Anzeigen und andere nützliche Informationen anzuzeigen. Eine solche Verfolgung erfolgt direkt durch die Dritten über ihre eigenen Server und unterliegt ihren eigenen Datenschutzrichtlinien. Diese Website hat keinen Zugriff auf oder Kontrolle über diese Cookies, Skripte und/oder Web-Beacons, die von Dritten verwendet werden können. Erfahren Sie, wie Sie sich von der Verwendung von <1>Cookies durch Google abmelden können.</1>",
+    "links_headline": "Links zu Websites von Dritten",
+    "links_text": "Ich habe Links auf dieser Website für Ihre Nutzung und Referenz aufgenommen. Ich bin nicht für die Datenschutzrichtlinien auf diesen Websites verantwortlich. Sie sollten sich bewusst sein, dass die Datenschutzrichtlinien dieser Websites von meinen eigenen abweichen können.",
+    "security_headline": "Sicherheit",
+    "security_text": "Die Sicherheit Ihrer persönlichen Informationen ist mir wichtig, aber denken Sie daran, dass keine Methode der Übertragung über das Internet oder der elektronischen Speicherung zu 100% sicher ist. Obwohl ich mich bemühe, kommerziell akzeptable Mittel zum Schutz Ihrer persönlichen Informationen zu verwenden, kann ich deren absolute Sicherheit nicht garantieren.",
+    "changes_headline": "Änderungen an dieser Datenschutzrichtlinie",
+    "changes_text": "Diese Datenschutzrichtlinie ist ab dem 01.08.2023 wirksam und bleibt in Kraft, es sei denn, es gibt Änderungen in ihren Bestimmungen in der Zukunft, die unmittelbar nach ihrer Veröffentlichung auf dieser Seite in Kraft treten werden. Ich behalte mir das Recht vor, meine Datenschutzrichtlinie jederzeit zu aktualisieren oder zu ändern, und Sie sollten diese Datenschutzrichtlinie regelmäßig überprüfen. Ihre fortgesetzte Nutzung des Dienstes nach der Veröffentlichung von Änderungen an dieser Datenschutzrichtlinie auf dieser Seite stellt Ihre Anerkennung der Änderungen und Ihre Zustimmung zur Einhaltung und Bindung an die geänderte Datenschutzrichtlinie dar. Wenn ich wesentliche Änderungen an dieser Datenschutzrichtlinie vornehme, werde ich Sie entweder über die von Ihnen bereitgestellte E-Mail-Adresse oder durch Platzierung eines prominenten Hinweises auf meiner Website benachrichtigen.",
+    "contact_headline": "Kontaktinformationen",
+    "contact_text": "Für Fragen oder Bedenken bezüglich der Datenschutzrichtlinie senden Sie mir bitte eine E-Mail an <1>email@s-brum.com</1>"
   }
 }
