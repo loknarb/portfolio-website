@@ -1,6 +1,5 @@
-import { Trans, useTranslation } from 'next-i18next';
-import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import { Trans } from 'next-i18next';
+import React, { useEffect } from 'react';
 import { useLocaleString } from './hooks/useLocaleString';
 import AtLogo from './UI/AtLogo';
 import CuteButtons from './UI/CuteButtons';
@@ -10,22 +9,22 @@ import LinkedInLogo from './UI/LinkedInLogo';
 import PrefixCode from './UI/Prefix';
 
 const CodeBlockSection = () => {
-  const [animate, setAnimate] = useState(false);
+  // const [animate, setAnimate] = useState(false);
   const { locale } = useLocaleString();
   useEffect(() => {
-    const y = getComputedStyle(document.body).getPropertyValue('--typewriterSpeed');
-    const typeWriterSpeed = parseInt(y.split('ms')[0]);
-    const finalSlide = 3 * (10 * typeWriterSpeed);
+    // const y = getComputedStyle(document.body).getPropertyValue('--typewriterSpeed');
+    // const typeWriterSpeed = parseInt(y.split('ms')[0]);
+    // const finalSlide = 3 * (10 * typeWriterSpeed);
     // const final = finalSlide.toString().concat('ms');
-    const timerSlider = setTimeout(() => {
-      setAnimate(true);
-    }, finalSlide);
-    return () => clearTimeout(timerSlider);
+    // const timerSlider = setTimeout(() => {
+    //   setAnimate(true);
+    // }, finalSlide);
+    // return () => clearTimeout(timerSlider);
   }, []);
   return (
     <div className='tablet:grid tablet:grid-cols-[3fr,_2fr] tablet:gap-5 phone:m-auto '>
       <div className='flex flex-col items-center'>
-        <h1 className='p-8 text-4xl font-bold text-center tablet:text-6xl font-body -tracking-wider'>
+        <h1 className='p-8 text-6xl font-bold text-center font-body -tracking-wider'>
           <Trans i18nKey={'main.job_position'}>
             Web
             <br />
@@ -58,9 +57,8 @@ const CodeBlockSection = () => {
       </div>
       <div
         id='code-window'
-        className={`max-w-md px-1 mt-6 -mx-8 tablet:mx-0 tablet:mr-auto transition-transform duration-700 delay-300 tablet:w-full tablet:flex-1 ${
-          animate ? 'mb-8' : 'mb-72'
-        } border rounded shadow-md bg-zinc-800 h-72 shadow-zinc-800 border-zinc-700`}>
+        className={`max-w-md px-1 mt-6 -mx-8 tablet:mx-0 tablet:mr-auto transition-transform duration-700 delay-300 tablet:w-full tablet:flex-1
+          mb-8 border rounded shadow-md bg-zinc-800 h-72 shadow-zinc-800 border-zinc-700`}>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
         <CuteButtons type='zoom' />

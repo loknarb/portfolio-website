@@ -5,7 +5,7 @@ import PrimaryButton from './UI/PrimaryButton';
 import enFlag from '../public/en_flag.png';
 import deFlag from '../public/de_flag.png';
 import { useLocaleString } from './hooks/useLocaleString';
-
+import { useRouter } from 'next/router';
 interface LanguageSwitchProps {
   width?: ImageProps['width'];
   height?: ImageProps['height'];
@@ -16,9 +16,10 @@ export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
   height = '40px',
 }) => {
   const { changeToCountryString } = useLocaleString();
+  const { pathname } = useRouter();
   return (
     <PrimaryButton className='text-4xl border-none'>
-      <Link href='/' locale={changeToCountryString}>
+      <Link href={pathname} locale={changeToCountryString}>
         <Image
           src={changeToCountryString === 'en' ? deFlag : enFlag}
           width={width}

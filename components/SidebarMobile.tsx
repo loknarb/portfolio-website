@@ -24,7 +24,7 @@ const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBoolean
           </PrimaryButton>
         </div>
         <div className='p-4 bg-opacity-100 rounded bg-backgroundNoise'>
-          <ResumeLink />
+          <ResumeLink button />
         </div>
       </aside>
     </>
