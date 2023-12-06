@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
 const Home: NextPage = () => {
   const { t } = useTranslation('common');
   return (
-    <div className='bg-backgroundNoise'>
+    <div className='bg-backgroundNoise tablet:pb-20'>
       <Head>
         <title>{t('home.title')}</title>
         <meta name='description' content='created with love by s-brum' />

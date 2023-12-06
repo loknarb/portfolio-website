@@ -11,7 +11,7 @@ const Footer = () => {
   const { t } = useTranslation('common');
   return (
     <>
-      <div className='flex tablet:mt-20'>
+      <div className='flex'>
         <LineGroup length={'w-1/3'} />
       </div>
       <div className='flex flex-row mt-6 text-center bg-transparent justify-evenly tablet:gap-20 tablet:px-20 tablet:mt-12 tablet:flex-row h-44'>

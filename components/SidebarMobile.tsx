@@ -23,8 +23,13 @@ const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBoolean
             <ArrowRight />
           </PrimaryButton>
         </div>
-        <div className='p-4 bg-opacity-100 rounded bg-backgroundNoise'>
+        <div className='flex flex-col items-center gap-2 p-4 bg-opacity-100 rounded bg-backgroundNoise'>
           <ResumeLink button />
+          <a
+            className='flex flex-col px-2 py-2 transition-all duration-500 bg-transparent rounded border-zinc-600 border-opacity-20 hover:scale-105 hover:shadow-md shadow-zinc-200'
+            href='https://www.recipes.s-brum.com'>
+            Recipes
+          </a>
         </div>
       </aside>
     </>
