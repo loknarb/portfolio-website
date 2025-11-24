@@ -13,7 +13,7 @@ const ResumeLink = ({ button, className }: ResumeLinkProps) => {
   const { t } = useTranslation('common');
   const { locale } = useLocaleString();
   return button ? (
-    <PrimaryButton className='justify-center border-0 tablet:border'>
+    <PrimaryButton as='div' className='justify-center border-0 tablet:border'>
       <Link href={`${t('header.resume')}_${locale}.pdf`} target={'_blank'}>
         <span>{t('header.resume')}</span>
       </Link>

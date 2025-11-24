@@ -18,7 +18,9 @@ const ProjectSection = () => {
           </div>
           <div className='grid grid-cols-2 gap-2 w-[85%] mx-auto my-4 tablet:grid-cols-3 desktop:gap-10'>
             <a href='https://github.com/loknarb/news-gallery'>
-              <PrimaryButton className='justify-around tablet:h-32 hover:border hover:border-zinc-600 hover:shadow-pink-300/10'>
+              <PrimaryButton
+                as='div'
+                className='justify-around tablet:h-32 hover:border hover:border-zinc-600 hover:shadow-pink-300/10'>
                 <span className='text-lg leading-4 font-display -tracking-wider'>news-gallery</span>
                 <span className='text-sm font-body'>react / typescript </span>
               </PrimaryButton>
@@ -30,7 +32,9 @@ const ProjectSection = () => {
               </PrimaryButton>
             </a> */}
             <a href='https://github.com/loknarb/state-management-comparison'>
-              <PrimaryButton className='justify-around border rounded tablet:h-32 hover:border-zinc-600 hover:shadow-yellow-200/10'>
+              <PrimaryButton
+                as='div'
+                className='justify-around border rounded tablet:h-32 hover:border-zinc-600 hover:shadow-yellow-200/10'>
                 <span className='text-lg leading-4 font-display -tracking-wider'>
                   state-comparer
                 </span>
@@ -38,7 +42,9 @@ const ProjectSection = () => {
               </PrimaryButton>
             </a>
             <a href='https://www.recipes.s-brum.com/'>
-              <PrimaryButton className='justify-around tablet:h-32 hover:border hover:border-zinc-600 hover:shadow-pink-300/10'>
+              <PrimaryButton
+                as='div'
+                className='justify-around tablet:h-32 hover:border hover:border-zinc-600 hover:shadow-pink-300/10'>
                 <span className='text-lg leading-4 font-display -tracking-wider'>recipes</span>
                 <span className='text-sm font-body'>remix / typescript / prisma </span>
               </PrimaryButton>

@@ -15,9 +15,9 @@ module.exports = {
       wider: '0.04em',
     },
     fontFamily: {
-      'display': ['"Josefin Slab"'],
-      'body': ['"Titillium Web"'],
-      'mono': ['"Space Mono"']
+      'display': ['var(--font-josefin-slab)', 'serif'],
+      'body': ['var(--font-titillium-web)', 'sans-serif'],
+      'mono': ['var(--font-space-mono)', 'monospace']
     },
     extend: {
       height: {

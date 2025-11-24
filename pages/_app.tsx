@@ -2,11 +2,15 @@ import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 import Layout from '../components/UI/Layout';
+import { spaceMono, josefinSlab, titilliumWeb } from '../lib/fonts';
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <div className={`${spaceMono.variable} ${josefinSlab.variable} ${titilliumWeb.variable}`}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </div>
   );
 }
 

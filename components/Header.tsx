@@ -31,7 +31,7 @@ const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }
       {width! >= 992 && <NavItems />}
       {width! < 992 && sideBar && (
         <div className='flex justify-end'>
-          <LanguageSwitch width={'25px'} height={'25px'} />
+          <LanguageSwitch width={25} height={25} />
           <PrimaryButton onClick={() => setSidebar(false)} className='ml-4'>
             <MenuLogo />
           </PrimaryButton>

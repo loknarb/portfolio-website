@@ -7,18 +7,18 @@ import deFlag from '../public/de_flag.png';
 import { useLocaleString } from './hooks/useLocaleString';
 import { useRouter } from 'next/router';
 interface LanguageSwitchProps {
-  width?: ImageProps['width'];
-  height?: ImageProps['height'];
+  width?: number | `${number}`;
+  height?: number | `${number}`;
 }
 
 export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
-  width = '40px',
-  height = '40px',
+  width = 40,
+  height = 40,
 }) => {
   const { changeToCountryString } = useLocaleString();
   const { pathname } = useRouter();
   return (
-    <PrimaryButton className='text-4xl border-none'>
+    <PrimaryButton as='div' className='text-4xl border-none'>
       <Link href={pathname} locale={changeToCountryString}>
         <Image
           src={changeToCountryString === 'en' ? deFlag : enFlag}
