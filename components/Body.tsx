@@ -1,10 +1,13 @@
 import React from 'react';
-import AboutSection from './AboutSection';
+import dynamic from 'next/dynamic';
 import CodeBlockSection from './CodeBlockSection';
-import FocusSection from './FocusSection';
 import GridPoints from './GridPoints';
-import PhilosophySection from './PhilosophySection';
-import ProjectSection from './ProjectSection';
+import AboutSection from './AboutSection';
+
+// Lazy load below-fold sections
+const FocusSection = dynamic(() => import('./FocusSection'));
+const ProjectSection = dynamic(() => import('./ProjectSection'));
+const PhilosophySection = dynamic(() => import('./PhilosophySection'));
 
 const Body = () => {
   return (

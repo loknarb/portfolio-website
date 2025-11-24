@@ -24,6 +24,7 @@ const CuteButtons: React.FC<
   return (
     <div
       className={`shadow-sm shadow-black mx-1 inline-block rounded-[50%] h-[10px] w-[10px] relative border ${backgroundColor} ${border} ${position}`}
+      aria-hidden="true"
       {...rest}
     />
   );
