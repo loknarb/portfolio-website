@@ -10,7 +10,7 @@ import WebDevIcon from './UI/WebDevIcon';
 const GridPoints = () => {
   const { t } = useTranslation('common');
   return (
-    <div className='grid tablet:grid-cols-3 tablet:p-8 tablet:gap-14 gap-14 max-w-7xl  mx-auto tablet:bg-foregroundNoise rounded my-4 w-full pt-72'>
+    <div className='grid tablet:grid-cols-3 tablet:p-8 tablet:gap-14 gap-14 max-w-7xl  mx-auto tablet:bg-foregroundNoise dark dark:text-zinc-200 dark:text-zinc-300 rounded my-4 w-full pt-72'>
       <PrimaryCard>
         <WebDevIcon color='fill-yellow-200' className='fill-yellow-200' />
         <H2Simple className='my-2 font-semibold lowercase'>{t('mission.title')}</H2Simple>

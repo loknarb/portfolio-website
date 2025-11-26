@@ -2,6 +2,7 @@ import ResumeLink from './ResumeLink';
 import { SetBooleanValue, UseBooleanValue } from './types/types';
 import ArrowRight from './UI/ArrowRight';
 import PrimaryButton from './UI/PrimaryButton';
+import ThemeToggle from './ThemeToggle';
 
 const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }> = ({
   sideBar,
@@ -23,13 +24,16 @@ const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBoolean
             <ArrowRight />
           </PrimaryButton>
         </div>
-        <div className='flex flex-col items-center gap-2 p-4 bg-opacity-100 rounded bg-backgroundNoise'>
+        <div className='flex flex-col items-center gap-2 p-4 bg-opacity-100 rounded bg-backgroundNoise bg-noise-blend'>
           <ResumeLink button />
           <a
             className='flex flex-col px-2 py-2 transition-all duration-500 bg-transparent rounded border-zinc-600 border-opacity-20 hover:scale-105 hover:shadow-md shadow-zinc-200'
             href='https://www.recipes.s-brum.com'>
             Recipes
           </a>
+          <div className='mt-2'>
+            <ThemeToggle />
+          </div>
         </div>
       </aside>
     </>

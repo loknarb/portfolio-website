@@ -11,12 +11,12 @@ const ProjectSection = () => {
     <>
       <div className='items-center w-full grid-cols-3 my-20 tablet:flex-row-reverse tablet:flex tablet:justify-evenly desktop:px-44'>
         <BlackDesktop className=' mx-auto tablet:py-0 tablet:mx-0 tablet:flex-1 tablet:flex-shrink-0 tablet:h-[400px] tablet:w-[400px] w-64 h-64 tablet:ml-8 -mb-6' />
-        <div className='max-w-4xl p-4 border rounded shadow-md border-zinc-600 border-opacity-20 tablet:mx-auto shadow-zinc-800'>
-          <H2Simple>{t('projects.title')}</H2Simple>
+        <div className='max-w-4xl p-4 border rounded shadow-md border-zinc-200 dark:border-zinc-600 border-opacity-20 tablet:mx-auto shadow-zinc-200 dark:shadow-zinc-800 bg-foregroundNoise dark dark:text-zinc-200 dark:text-zinc-300'>
+          <H2Simple className='dark:text-zinc-300'>{t('projects.title')}</H2Simple>
           <div className='flex tablet:w-60'>
             <LineGroup length='w-20' />
           </div>
-          <div className='grid grid-cols-2 gap-2 w-[85%] mx-auto my-4 tablet:grid-cols-3 desktop:gap-10'>
+          <div className='grid grid-cols-2 gap-2 w-[85%] mx-auto my-4 tablet:grid-cols-3 desktop:gap-10 dark:text-zinc-300'>
             <a href='https://github.com/loknarb/news-gallery'>
               <PrimaryButton
                 as='div'

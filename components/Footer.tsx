@@ -15,7 +15,7 @@ const Footer = () => {
         <LineGroup length={'w-1/3'} />
       </div>
       <div className='flex flex-row mt-6 text-center bg-transparent justify-evenly tablet:gap-20 tablet:px-20 tablet:mt-12 tablet:flex-row min-h-[11rem]'>
-        <div className='flex flex-col items-center justify-center w-48 max-w-[12rem] gap-1 px-4 align-top tablet:border tablet:rounded tablet:shadow-md min-h-[9rem] tablet:border-zinc-600 tablet:border-opacity-20 shadow-zinc-800'>
+        <div className='flex flex-col items-center justify-center w-48 max-w-[12rem] gap-1 px-4 align-top tablet:border tablet:rounded tablet:shadow-md min-h-[9rem] tablet:border-zinc-200 dark:tablet:border-zinc-600 tablet:border-opacity-20 shadow-zinc-200 dark:shadow-zinc-800'>
           <ResumeLink />
           <Link href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/'>
             <span className='text-xs cursor-pointer'>LinkedIn</span>
@@ -45,21 +45,21 @@ const Footer = () => {
                 className={'hover:scale-110 transition-transform duration-500'}
                 target={'_blank'}
                 aria-label='Visit my LinkedIn profile'>
-                <LinkedInLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
+                <LinkedInLogo className='w-7 h-7 tablet:w-10 tablet:h-10 fill-zinc-900 dark:fill-zinc-50' />
               </a>
               <a
                 href='https://github.com/loknarb'
                 className={'hover:scale-110 transition-transform duration-500'}
                 target={'_blank'}
                 aria-label='Visit my GitHub profile'>
-                <GithubLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
+                <GithubLogo className='w-7 h-7 tablet:w-10 tablet:h-10 fill-zinc-900 dark:fill-zinc-50' />
               </a>
               <a
                 href='mailto:email@s-brum.com'
                 className={'hover:scale-110 transition-transform duration-500'}
                 target={'_blank'}
                 aria-label='Send me an email'>
-                <AtLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
+                <AtLogo className='w-7 h-7 tablet:w-10 tablet:h-10 stroke-zinc-900 dark:stroke-zinc-50' />
               </a>
             </div>
           </div>

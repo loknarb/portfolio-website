@@ -36,28 +36,28 @@ const CodeBlockSection = () => {
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}
             aria-label='Visit my LinkedIn profile'>
-            <LinkedInLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
+            <LinkedInLogo className='w-7 h-7 tablet:w-10 tablet:h-10 fill-zinc-900 dark:fill-zinc-50' />
           </a>
           <a
             href='https://github.com/loknarb'
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}
             aria-label='Visit my GitHub profile'>
-            <GithubLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
+            <GithubLogo className='w-7 h-7 tablet:w-10 tablet:h-10 fill-zinc-900 dark:fill-zinc-50' />
           </a>
           <a
             href='mailto:contact@s-brum.com'
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}
             aria-label='Send me an email'>
-            <AtLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
+            <AtLogo className='w-7 h-7 tablet:w-10 tablet:h-10 stroke-zinc-900 dark:stroke-zinc-50' />
           </a>
         </div>
       </div>
       <div
         id='code-window'
         className={`max-w-md px-1 mt-6 -mx-8 tablet:mx-0 tablet:mr-auto transition-transform duration-700 delay-300 tablet:w-full tablet:flex-1
-          mb-8 border rounded shadow-md bg-zinc-800 h-72 shadow-zinc-800 border-zinc-700`}>
+          mb-8 border rounded shadow-md bg-zinc-800 h-72 shadow-zinc-800 border-zinc-700 text-zinc-200`}>
         <CuteButtons type='close' />
         <CuteButtons type='minimize' />
         <CuteButtons type='zoom' />

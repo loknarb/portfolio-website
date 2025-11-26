@@ -10,7 +10,7 @@ const PrefixCode: React.FC<
     <div className='flex align-top'>
       <div
         id={id}
-        className={`${type === ' ' ? 'mr-4' : 'mr-2'} ${className ? className : 'text-zinc-500'}`}>
+        className={`${type === ' ' ? 'mr-4' : 'mr-2'} ${className ? className : 'text-zinc-300'}`}>
         {type}
       </div>
       <code id={id} {...rest}>

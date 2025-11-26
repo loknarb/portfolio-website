@@ -30,7 +30,7 @@ const PrivacyPolicy: NextPage = () => {
             their own servers and is subject to their own privacy policies. This website has no
             access or control over these cookies, scripts and/or web beacons that may be used by
             third parties. Learn how to
-            <a href='http://www.google.com/privacy_ads.html' className='underline text-zinc-50'>
+            <a href='http://www.google.com/privacy_ads.html' className='underline text-zinc-300'>
               opt out of Google&apos;s cookie usage.
             </a>
           </Trans>
@@ -43,7 +43,7 @@ const PrivacyPolicy: NextPage = () => {
         <p className='px-8'>
           <Trans i18nKey={'privacy.contact_text'}>
             For any questions or concerns regarding the privacy policy, please send me an email at
-            <a href='mailto:email@s-brum.com' target='_blank' className='underline text-zinc-50'>
+            <a href='mailto:email@s-brum.com' target='_blank' className='underline text-zinc-300'>
               email@s-brum.com
             </a>
             .

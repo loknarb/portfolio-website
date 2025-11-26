@@ -7,6 +7,7 @@ import LineGroup from './UI/LineGroup';
 import MenuLogo from './UI/MenuLogo';
 import PrimaryButton from './UI/PrimaryButton';
 import { useRouter } from 'next/router';
+import ThemeToggle from './ThemeToggle';
 const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }> = ({
   sideBar,
   setSidebar,
@@ -29,10 +30,15 @@ const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }
         </span>
         brum
       </button>
-      {width! >= 992 && <NavItems />}
+      {width! >= 992 && (
+        <div className='flex items-center gap-4'>
+          <NavItems />
+          <ThemeToggle />
+        </div>
+      )}
       {width! < 992 && sideBar && (
         <div className='flex justify-end'>
-          <LanguageSwitch width={25} height={25} />
+          {/* <LanguageSwitch width={25} height={25} /> */}
           <PrimaryButton onClick={() => setSidebar(false)} className='ml-4' aria-label='Close menu'>
             <MenuLogo />
           </PrimaryButton>
