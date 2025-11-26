@@ -4,7 +4,7 @@ const CuteButtons: React.FC<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
     type: 'close' | 'minimize' | 'zoom';
   }
-> = ({ color, type, ...rest }) => {
+> = ({ type, ...rest }) => {
   let border: string;
   let backgroundColor: string;
   let position: string;
@@ -23,9 +23,9 @@ const CuteButtons: React.FC<
   }
   return (
     <div
-      className={`shadow-sm shadow-black mx-1 inline-block rounded-[50%] h-[10px] w-[10px] relative border ${backgroundColor} ${border} ${position}`}
-      aria-hidden="true"
       {...rest}
+      className={`shadow-sm shadow-black mx-1 inline-block rounded-[50%] h-[10px] w-[10px] relative border ${backgroundColor} ${border} ${position}`}
+      aria-hidden='true'
     />
   );
 };

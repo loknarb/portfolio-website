@@ -25,11 +25,7 @@ const CodeBlockSection = () => {
     <div className='tablet:grid tablet:grid-cols-[3fr,_2fr] tablet:gap-5 phone:m-auto '>
       <div className='flex flex-col items-center'>
         <h1 className='p-8 text-6xl font-bold text-center font-body -tracking-wider'>
-          <Trans i18nKey={'main.job_position'}>
-            Web
-            <br />
-            Developer
-          </Trans>
+          <Trans i18nKey={'main.job_position'} />
           <span className='flex'>
             <LineGroup length={locale === 'en' ? 'w-20' : 'w-[5.5rem]'} />
           </span>
@@ -39,21 +35,21 @@ const CodeBlockSection = () => {
             href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ '
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}
-            aria-label="Visit my LinkedIn profile">
+            aria-label='Visit my LinkedIn profile'>
             <LinkedInLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
           </a>
           <a
             href='https://github.com/loknarb'
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}
-            aria-label="Visit my GitHub profile">
+            aria-label='Visit my GitHub profile'>
             <GithubLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
           </a>
           <a
             href='mailto:contact@s-brum.com'
             className={'hover:scale-110 transition-transform duration-500'}
             target={'_blank'}
-            aria-label="Send me an email">
+            aria-label='Send me an email'>
             <AtLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
           </a>
         </div>

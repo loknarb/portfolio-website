@@ -1,4 +1,4 @@
-const MeGraph = ({ color, className, ...props }: React.SVGProps<SVGSVGElement>) => (
+const MeGraph = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
     className={className ? className : ''}
     width='210'

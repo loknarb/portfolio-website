@@ -9,7 +9,7 @@ type ResumeLinkProps = {
   button?: boolean;
   className?: string;
 };
-const ResumeLink = ({ button, className }: ResumeLinkProps) => {
+const ResumeLink = ({ button }: ResumeLinkProps) => {
   const { t } = useTranslation('common');
   const { locale } = useLocaleString();
   return button ? (

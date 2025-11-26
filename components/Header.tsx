@@ -22,7 +22,7 @@ const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }
       <button
         className='flex items-center text-5xl font-semibold -tracking-wider font-display'
         onClick={handleLogoClick}
-        aria-label="Go to homepage">
+        aria-label='Go to homepage'>
         s
         <span className='flex w-5 px-1'>
           <LineGroup length='w-1/3' />
@@ -33,7 +33,7 @@ const Header: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }
       {width! < 992 && sideBar && (
         <div className='flex justify-end'>
           <LanguageSwitch width={25} height={25} />
-          <PrimaryButton onClick={() => setSidebar(false)} className='ml-4' aria-label="Close menu">
+          <PrimaryButton onClick={() => setSidebar(false)} className='ml-4' aria-label='Close menu'>
             <MenuLogo />
           </PrimaryButton>
         </div>

@@ -14,7 +14,7 @@ const FocusSection = () => {
       </div>
       <ParagraphSimple className='py-5 text-zinc-200'>
         <Trans i18nKey={'focus.text'}>
-          I'm currently focused on using<span className='font-semibold'> React </span>with
+          I&apos;m currently focused on using<span className='font-semibold'> React </span>with
           <span className='font-semibold'> Typescript </span>
           to actualize great ideas. A couple of my everyday tasks include writing reusable
           components, building

@@ -7,7 +7,7 @@ const PrimaryCard: React.FC<
   return (
     <div
       className={clsx(
-        'flex flex-col items-center p-4 border rounded border-zinc-600 bg-foregroundNoise',
+        'w-full flex flex-col items-center p-4 border rounded border-zinc-600 bg-foregroundNoise',
         className
       )}>
       {children}

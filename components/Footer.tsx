@@ -14,8 +14,8 @@ const Footer = () => {
       <div className='flex'>
         <LineGroup length={'w-1/3'} />
       </div>
-      <div className='flex flex-row mt-6 text-center bg-transparent justify-evenly tablet:gap-20 tablet:px-20 tablet:mt-12 tablet:flex-row h-44'>
-        <div className='flex flex-col items-center justify-center w-48 gap-1 px-4 align-top tablet:border tablet:rounded tablet:shadow-md h-36 tablet:border-zinc-600 tablet:border-opacity-20 shadow-zinc-800'>
+      <div className='flex flex-row mt-6 text-center bg-transparent justify-evenly tablet:gap-20 tablet:px-20 tablet:mt-12 tablet:flex-row min-h-[11rem]'>
+        <div className='flex flex-col items-center justify-center w-48 max-w-[12rem] gap-1 px-4 align-top tablet:border tablet:rounded tablet:shadow-md min-h-[9rem] tablet:border-zinc-600 tablet:border-opacity-20 shadow-zinc-800'>
           <ResumeLink />
           <Link href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/'>
             <span className='text-xs cursor-pointer'>LinkedIn</span>
@@ -31,33 +31,34 @@ const Footer = () => {
           </Link>
         </div>
         <div className='flex flex-col items-center self-start justify-center'>
-          <h2 className='py-2 font-mono text-2xl tracking-tight tablet:text-4xl'>
+          {/* Reserve space for the longest translation to prevent layout shift on language switch */}
+          <h2 className='py-2 font-mono text-2xl tracking-tight tablet:text-4xl min-h-[3.5rem]'>
             {t('still_curious.text')}
           </h2>
           <div className='flex w-48 mx-auto'>
             <LineGroup length='w-1/3' />
           </div>
           <div className='text-sm tablet:text-lg font-body'>
-            <div className='flex flex-1 w-64 px-8 my-4 justify-evenly'>
+            <div className='flex flex-1 w-full gap-4 tablet:w-64 max-w-[16rem] px-8 my-4 justify-evenly'>
               <a
                 href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/ '
                 className={'hover:scale-110 transition-transform duration-500'}
                 target={'_blank'}
-                aria-label="Visit my LinkedIn profile">
+                aria-label='Visit my LinkedIn profile'>
                 <LinkedInLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
               </a>
               <a
                 href='https://github.com/loknarb'
                 className={'hover:scale-110 transition-transform duration-500'}
                 target={'_blank'}
-                aria-label="Visit my GitHub profile">
+                aria-label='Visit my GitHub profile'>
                 <GithubLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
               </a>
               <a
                 href='mailto:email@s-brum.com'
                 className={'hover:scale-110 transition-transform duration-500'}
                 target={'_blank'}
-                aria-label="Send me an email">
+                aria-label='Send me an email'>
                 <AtLogo className='w-7 h-7 tablet:w-10 tablet:h-10' />
               </a>
             </div>

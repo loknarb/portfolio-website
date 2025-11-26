@@ -1,5 +1,6 @@
-const BlackDesktop = ({ color, className, ...props }: React.SVGProps<SVGSVGElement>) => (
+const BlackDesktop = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
+    {...props}
     className={className ? className : ''}
     width='214'
     height='176'

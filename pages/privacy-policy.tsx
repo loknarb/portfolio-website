@@ -3,7 +3,7 @@ import React from 'react';
 import PrimaryCard from '../components/UI/PrimaryCard';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Trans, useTranslation } from 'next-i18next';
-type Props = { [key: string]: any };
+type Props = Record<string, unknown>;
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? 'en', ['common'])),
@@ -31,7 +31,7 @@ const PrivacyPolicy: NextPage = () => {
             access or control over these cookies, scripts and/or web beacons that may be used by
             third parties. Learn how to
             <a href='http://www.google.com/privacy_ads.html' className='underline text-zinc-50'>
-              opt out of Google's cookie usage.
+              opt out of Google&apos;s cookie usage.
             </a>
           </Trans>
         </p>
@@ -43,7 +43,7 @@ const PrivacyPolicy: NextPage = () => {
         <p className='px-8'>
           <Trans i18nKey={'privacy.contact_text'}>
             For any questions or concerns regarding the privacy policy, please send me an email at
-            <a href='mailto:email@s-brum.com' target={'_blank'} className='underline text-zinc-50'>
+            <a href='mailto:email@s-brum.com' target='_blank' className='underline text-zinc-50'>
               email@s-brum.com
             </a>
             .

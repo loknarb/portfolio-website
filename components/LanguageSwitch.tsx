@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import PrimaryButton from './UI/PrimaryButton';
@@ -11,10 +11,7 @@ interface LanguageSwitchProps {
   height?: number | `${number}`;
 }
 
-export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({
-  width = 40,
-  height = 40,
-}) => {
+export const LanguageSwitch: React.FC<LanguageSwitchProps> = ({ width = 40, height = 40 }) => {
   const { changeToCountryString } = useLocaleString();
   const { pathname } = useRouter();
   return (

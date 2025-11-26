@@ -21,4 +21,3 @@ const PrefixCode: React.FC<
 };
 
 export default PrefixCode;
-before: '${"text-zinc-500"}';

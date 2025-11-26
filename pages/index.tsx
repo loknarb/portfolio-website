@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Main from '../components/Main';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-type Props = { [key: string]: any };
+type Props = Record<string, unknown>;
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? 'en', ['common'])),
