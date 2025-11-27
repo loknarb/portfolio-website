@@ -11,16 +11,22 @@ const AboutSection = () => {
     <>
       <div className='items-center w-full tablet:flex-row-reverse tablet:flex tablet:justify-evenly desktop:px-44'>
         <div className='flex-1 max-w-2xl p-6 mb-4 rounded tablet:mx-4 bg-foregroundNoise dark dark:text-zinc-200 dark:text-zinc-300'>
-          <H2Simple className='tablet:mr-4 tablet:text-right dark:text-zinc-300'>{t('about.title')}</H2Simple>
+          <H2Simple className='tablet:mr-4 tablet:text-right dark:text-zinc-300'>
+            {t('about.title')}
+          </H2Simple>
           <div className='flex tablet:ml-auto tablet:mr-0 tablet:w-60'>
             <LineGroup length='w-20' />
           </div>
           <ParagraphSimple className='py-5 tablet:text-right'>
             <span className='break-words whitespace-normal dark:text-zinc-300'>
               <Trans i18nKey={'about.text'}>
-                Hey my name is <span className='font-semibold dark:text-zinc-200 dark:text-zinc-300'> Sebastien</span>, an
-                intrigued developer, particularly when it involves solving problems, or figuring out
-                a balance between creative design and meeting deadlines.
+                Hey my name is{' '}
+                <span className='font-semibold dark:text-zinc-200 dark:text-zinc-300'>
+                  {' '}
+                  Sebastien
+                </span>
+                , an intrigued developer, particularly when it involves solving problems, or
+                figuring out a balance between creative design and meeting deadlines.
               </Trans>
             </span>
           </ParagraphSimple>
