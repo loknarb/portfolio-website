@@ -24,12 +24,6 @@ module.exports = {
       height: {
         'half-screen': '50vh',
       },
-      backgroundImage: {
-        backgroundNoise:
-          "url('../public/bg_noise_q15.webp'), linear-gradient(to bottom, var(--bg-noise-start), var(--bg-noise-end))",
-        foregroundNoise:
-          "url('../public/bg_noise_q15.webp'), linear-gradient(to bottom, var(--fg-noise-start), var(--fg-noise-end))",
-      },
     },
   },
   plugins: [],

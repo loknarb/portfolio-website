@@ -7,7 +7,7 @@ import { Trans, useTranslation } from 'next-i18next';
 const FocusSection = () => {
   const { t } = useTranslation('common');
   return (
-    <div className='max-w-4xl p-6 rounded tablet:mx-auto bg-foregroundNoise dark dark:text-zinc-200 dark:text-zinc-300'>
+    <div className='max-w-4xl p-6 rounded tablet:mx-auto bg-zinc-800 dark dark:text-zinc-200 dark:text-zinc-300'>
       <H2Simple className='tablet:relative dark:text-zinc-300'>{t('focus.title')}</H2Simple>
       <div className='flex tablet:w-60'>
         <LineGroup length='w-20' />

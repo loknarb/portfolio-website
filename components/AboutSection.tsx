@@ -10,7 +10,7 @@ const AboutSection = () => {
   return (
     <>
       <div className='items-center w-full tablet:flex-row-reverse tablet:flex tablet:justify-evenly desktop:px-44'>
-        <div className='flex-1 max-w-2xl p-6 mb-4 rounded tablet:mx-4 bg-foregroundNoise dark dark:text-zinc-200 dark:text-zinc-300'>
+        <div className='flex-1 max-w-2xl p-6 mb-4 rounded tablet:mx-4 bg-zinc-800 dark dark:text-zinc-200 dark:text-zinc-300'>
           <H2Simple className='tablet:mr-4 tablet:text-right dark:text-zinc-300'>
             {t('about.title')}
           </H2Simple>
