@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-import React from 'react';
 import AtLogo from './UI/AtLogo';
 import GithubLogo from './UI/GithubLogo';
 import LineGroup from './UI/LineGroup';
@@ -14,7 +13,7 @@ const Footer = () => {
       <div className='flex'>
         <LineGroup length={'w-1/3'} />
       </div>
-      <div className='flex flex-row mt-6 text-center bg-transparent justify-evenly tablet:gap-20 tablet:px-20 tablet:mt-12 tablet:flex-row min-h-[11rem]'>
+      <div className='items-center flex flex-row mt-6 text-center bg-transparent justify-evenly tablet:gap-20 tablet:px-20 tablet:mt-12 tablet:flex-row min-h-[11rem]'>
         <div className='flex flex-col items-center justify-center w-48 max-w-[12rem] gap-1 px-4 align-top tablet:border tablet:rounded tablet:shadow-md min-h-[9rem] tablet:border-zinc-200 dark:tablet:border-zinc-600 tablet:border-opacity-20 shadow-zinc-200 dark:shadow-zinc-800'>
           <ResumeLink />
           <Link href='https://www.linkedin.com/in/sebastien-brumbaugh-9306861a9/'>
@@ -30,7 +29,7 @@ const Footer = () => {
             <span className='text-xs cursor-pointer'>{t('privacy.headline')}</span>
           </Link>
         </div>
-        <div className='flex flex-col items-center self-start justify-center'>
+        <div className='flex flex-col items-center  justify-center'>
           {/* Reserve space for the longest translation to prevent layout shift on language switch */}
           <h2 className='py-2 font-mono text-2xl tracking-tight tablet:text-4xl min-h-[3.5rem]'>
             {t('still_curious.text')}
@@ -64,9 +63,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className='w-5/6 py-2 mx-auto text-center tablet:py-4 tablet:mt-6 '>
-        <small className='text-xs'>{t('footer.text')}</small>
       </div>
     </>
   );

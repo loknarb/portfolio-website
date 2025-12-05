@@ -19,15 +19,12 @@ const AboutSection = () => {
           </div>
           <ParagraphSimple className='py-5 tablet:text-right'>
             <span className='break-words whitespace-normal dark:text-zinc-300'>
-              <Trans i18nKey={'about.text'}>
-                Hey my name is{' '}
-                <span className='font-semibold dark:text-zinc-200 dark:text-zinc-300'>
-                  {' '}
-                  Sebastien
-                </span>
-                , an intrigued developer, particularly when it involves solving problems, or
-                figuring out a balance between creative design and meeting deadlines.
-              </Trans>
+              <Trans
+                i18nKey='about.text'
+                components={{
+                  1: <span className='font-semibold dark:text-zinc-200 dark:text-zinc-300' />,
+                }}
+              />
             </span>
           </ParagraphSimple>
         </div>

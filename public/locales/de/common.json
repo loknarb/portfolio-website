@@ -10,6 +10,9 @@
   },
   "target_language": "EN",
   "current_language": "DE",
+  "sidebar": {
+    "close": "Schließen"
+  },
   "web_design": {
     "title": "Webdesign",
     "text": "Du und ich werden eine ästhetisch ansprechende Website gestalten, die skalierbar ist."
@@ -24,7 +27,7 @@
   },
   "about": {
     "title": "Über mich",
-    "text": "Hey, mein Name ist <1> Sebastien</1>, ein neugieriger Entwickler, insbesondere wenn es darum geht, Probleme zu lösen oder eine Balance zwischen kreativem Design und Einhaltung von Deadlines zu finden."
+    "text": "Hey, mein Name ist <1>Sebastien</1>, ein neugieriger Entwickler, insbesondere wenn es darum geht, Probleme zu lösen oder eine Balance zwischen kreativem Design und Einhaltung von Deadlines zu finden."
   },
   "focus": {
     "title": "Mein Fokus",
@@ -41,9 +44,6 @@
   "still_curious": {
     "title": "Immer noch neugierig?",
     "text": "Lass uns sprechen."
-  },
-  "footer": {
-    "text": "© 2025 - Entwickelt und gestaltet mit ♡"
   },
   "privacy": {
     "headline": "Datenschutzrichtlinie",

@@ -1,13 +1,15 @@
 import ResumeLink from './ResumeLink';
 import { SetBooleanValue, UseBooleanValue } from './types/types';
-import ArrowRight from './UI/ArrowRight';
+import CloseIcon from './UI/CloseIcon';
 import PrimaryButton from './UI/PrimaryButton';
 import ThemeToggle from './ThemeToggle';
+import { useTranslation } from 'next-i18next';
 
 const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBooleanValue }> = ({
   sideBar,
   setSidebar,
 }) => {
+  const { t } = useTranslation('common');
   return (
     <>
       <div
@@ -16,12 +18,15 @@ const SidebarMobile: React.FC<{ sideBar: UseBooleanValue; setSidebar: SetBoolean
         }`}
         onClick={() => setSidebar(true)}></div>
       <aside
-        className={`py-4 px-10 top-0 right-0 h-42 w-54 z-40 flex-col flex fixed bg-transparent  shadow-sm  transistion-transform ease-in-out -translate-x-64 w-55 duration-300 rounded-bl  ${
+        className={`py-4 px-10 top-0 right-0 h-42 w-54 z-40 flex-col flex fixed bg-transparent   transistion-transform ease-in-out -translate-x-64 w-55 duration-300 rounded-bl  ${
           sideBar ? 'translate-x-64' : 'translate-x-0'
         }`}>
         <div className='self-end'>
-          <PrimaryButton className={`my-2`} onClick={() => setSidebar(true)}>
-            <ArrowRight />
+          <PrimaryButton
+            className='my-2 bg-zinc-50 dark:bg-zinc-900'
+            onClick={() => setSidebar(true)}
+            aria-label={t('sidebar.close')}>
+            <CloseIcon />
           </PrimaryButton>
         </div>
         <div className='flex flex-col items-center gap-2 p-4 bg-opacity-100 rounded bg-zinc-50 dark:bg-zinc-900'>

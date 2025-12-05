@@ -10,6 +10,9 @@
   },
   "target_language": "DE",
   "current_language": "EN",
+  "sidebar": {
+    "close": "Close"
+  },
   "web_design": {
     "title": "Web Design",
     "text": "You and I will design an aesthetically pleasing website, capable of being scaled."
@@ -41,9 +44,6 @@
   "still_curious": {
     "title": "Still curious?",
     "text": "Let's talk."
-  },
-  "footer": {
-    "text": "© 2025 — Built & Designed with ♡"
   },
   "privacy": {
     "headline": "Privacy Policy",
